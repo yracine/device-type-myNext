@@ -107,7 +107,12 @@ g) Go back to the code window, and hit the "publish/for me" button at the top ri
 In order to connect your ST account to Nest for the cloud-to-cloud integration, you need to create your own
 Nest developer account.  You should also have your own Nest Home account setup.
 
+
 Please follow the detailed steps at the ST community wiki to create your own Nest developer account.
+
+https://developers.nest.com/
+
+Refer to 
 
 After creating your Nest developer account, you can link the Nest Developer account to
 your ST account by executing the oAuth authorization flow in MyNextManager.

@@ -108,7 +108,7 @@ https://developers.nest.com/
 
 Refer to 
 
-http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Creation_of_a_Nest_developer_account
+http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_How_to_create_a_Nest_Developer_account
 
 b) After creating your Nest developer account, you need to copy and paste the productId and product secret keys under
 your newly created My NextManager app under the IDE.

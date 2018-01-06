@@ -59,7 +59,7 @@ INSTALLATION STEPS
 
 For each device (My Next Tstat, My Next Alarm, My Next Cam),
 
-a) Go to https://graph.api.smartthings.com/ide/devices
+a) Go to https://graph.api.smartthings.com/ide/devices (or whatever your shard is)
 
 b) Hit the "+New Device Handler" at the top right corner
 
@@ -76,7 +76,7 @@ f) Hit the "publish/for me" button at the top right corner (in the code window)
 
 # 2) Create a new smartapp (MyNextManager)
 
-a) Go to https://graph.api.smartthings.com/ide/apps
+a) Go to https://graph.api.smartthings.com/ide/apps (or whatever your shard is)
 
 b) Hit the "+New SmartApp" at the top right corner
 
@@ -97,16 +97,10 @@ f) <b>Make sure that "enable OAuth" in Smartapp is active </b>
 g) Go back to the code window, and hit the "publish/for me" button at the top right corner 
 
 
-# 3) Under the ST mobile app, execute MyNextManager
+# 3) Link your SmartThings to your Nest Account and Connect them.
 
-<b>Click on the Smartapps link in the upper section of the following Marketspace screen (last icon in the bottom menu), and then Smartapps/MyApps (last item in the list).</b>
-
-
-# 4) Connect SmartThings to your Nest Account
-
-In order to connect your ST account to Nest for the cloud-to-cloud integration, you need to create your own
+a) In order to connect your ST account to Nest for the cloud-to-cloud integration, you need to create your own
 Nest developer account.  You should also have your own Nest Home account setup.
-
 
 Please follow the detailed steps at the ST community wiki to create your own Nest developer account.
 
@@ -114,15 +108,36 @@ https://developers.nest.com/
 
 Refer to 
 
-After creating your Nest developer account, you can link the Nest Developer account to
-your ST account by executing the oAuth authorization flow in MyNextManager.
+http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Creation_of_a_Nest_developer_account
 
-To execute MyNextManager, go to the ST mobile app, and find MyNextManager under MarketSpace>MyApps, My Next Manager
-should be in the middle of the list.
+b) After creating your Nest developer account, you need to copy and paste the productId and product secret keys under
+your newly created My NextManager app under the IDE.
+
+Go to https://graph.api.smartthings.com/ide/apps (or whatever your shard is)
+
+
+c) Click on the NextManager smartapp 
+
+d) Click on the App Settings button in the upper right corner
+
+d) Click on AppSettings in the middle of the screen which should expand the view
+
+e) Copy and paste the productId and product secret keys to the clientId and private key fields respectively
+
+<b>PLEASE MAKE SURE TO NOT INSERT ANY SPACES BEFORE OR AFTER THE KEYS IN EACH FIELD!!</b>
+
+f) Hit the "SAVE" Button at the bottom
+
+# 4) Under the ST mobile app, execute MyNextManager
+
+<b>Click on the Smartapps link in the upper section of the following Marketspace screen (last icon in the bottom menu), and then Smartapps/MyApps (last item in the list).</b>
+
+To execute MyNextManager, find MyNextManager under MarketSpace>MyApps, My Next Manager should be in the middle of the list.
 
 After being connected, click 'Next' and select your Nest devices that you want to control from Smartthings and, then press till 'Other Settings &Notification' page, and then 'Done' when finished.
 
 If you get a blank screen after pressing 'Next or you get the following error: " Error - bad state. Unable to complete page configuration", you'd need to enable oAuth as specified in step 2f) above.
+
 
 # 5) Your device(s) should now be ready to process your commands
 

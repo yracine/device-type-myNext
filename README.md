@@ -180,11 +180,22 @@ You only need to edit the following parameters
 
 # 8) Use some of the Zoned Heating/Cooling Smartapps available (optional)
 
-The following zoned Heating/cooling smartapps have many safeguards built-in to protect your HVAC.
+The following zoned Heating/cooling smartapps have many features to leverage your Nest Thermostat.
 
-- The smartapps will check the vent's internal temperature to make sure it's not too hot or too cold
-- The smartapps will not close more than 50% of the smart vents inputted in the smartapp
-- You can define some minimum open threshold (by default 10% in zone, 20% outside the zone) to avoid closing the vents too tight.
+* User friendly Dashboard and workflow pages for easier setup  (i.e. Dashboard->GeneralSetup->RoomsSetup->ZonesSetup->SchedulesSetup-> NotificationSettings).
+
+* Flexible schedule definition: you can define up to 12 schedules for your zones (mornings, weekdays, evenings, nights, weekends, etc.)
+* Remote Sensors: choice of  temp calculation method (Average, Median, Minimum, Maximum, Heat/Min-Cool/Max) based on all room temp sensors inside the zone so that your heat/cool settings are adjusted at the main thermostat even if your rooms are far away. The average calculation is similar to the ecobee3's follow me feature with its remote sensors.
+* For each schedule, ST users can define the start & end times, the thermostat's heating/cooling setpoints (or climates for ecobee), the max temp adjustment based on the chosen calculation method (avg, median, min, max, etc.)
+* You can set your schedules to run only for some routines/ST hello modes (ex. 'Away', 'Home', 'Night', or your own customized ones )
+* For each schedule, you can assign the included zone(s) according to your own requirements (ex. Upstairs bedrooms, 1st level, basement, etc)
+* You can define up to 8 zones for your home which can include up to 16 rooms
+* Ability to set your smart thermostat to 'Away' or 'Present' based on all rooms' motion sensors
+* Ability to set the thermostat's fanMode ('on', 'auto', 'circulate') during a specific schedule
+* Ability to trigger the thermostat's fan based on some indoor temp differential. The temp differential can be customized for each schedule.
+* Ability to adjust your main thermostat's settings (every 5 minutes) based on an outdoor temp sensor (optional)
+* and many more features...
+
 
 
 

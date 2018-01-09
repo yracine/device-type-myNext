@@ -183,7 +183,6 @@ You only need to edit the following parameters
 The following zoned Heating/cooling smartapps have many features to leverage your Nest Thermostat.
 
 * User friendly Dashboard and workflow pages for easier setup  (i.e. Dashboard->GeneralSetup->RoomsSetup->ZonesSetup->SchedulesSetup-> NotificationSettings).
-
 * Flexible schedule definition: you can define up to 12 schedules for your zones (mornings, weekdays, evenings, nights, weekends, etc.)
 * Remote Sensors: choice of  temp calculation method (Average, Median, Minimum, Maximum, Heat/Min-Cool/Max) based on all room temp sensors inside the zone so that your heat/cool settings are adjusted at the main thermostat even if your rooms are far away. The average calculation is similar to the ecobee3's follow me feature with its remote sensors.
 * For each schedule, ST users can define the start & end times, the thermostat's heating/cooling setpoints (or climates for ecobee), the max temp adjustment based on the chosen calculation method (avg, median, min, max, etc.)
@@ -216,6 +215,8 @@ http://thingsthataresmart.wiki/index.php?title=ScheduleTstatZones
 
 The smartapp that enables Multi Zoned Heating/Cooling Solutions based on any ST connected thermostats/sensors- - coupled with smart vents (optional, can be any Flair, Keen Home, EcoVent, EcoNet smart vents) for better temp settings control throughout your home". 
 
+The smartapp will use the thermostat's setpoints as baselines for targetet heating/cooling based on the concept of virtual/physical zones.
+
 The smartapp can also control multiple Minisplit/Windows unit and portable heaters/coolers inside your scheduled zones (based on the Flair HVACUnit device, see http://thingsthataresmart.wiki/index.php?title=My_Flair_HVac_Unit).
 
 
@@ -230,9 +231,7 @@ For more details:
 
 http://thingsthataresmart.wiki/index.php?title=ScheduleRoomTempControl
 
-The smartapp that enables Multi Zoned Heating/Cooling Solutions based on any smart vents (Keen Home, Flair, Econet, etc) and any ST connected thermostats/sensors. 
-
-The smartapp allows you to define some rooms' thresholds for better control of hotter/colder rooms in your premises.
+The smartapp allows you to define some rooms' thresholds for better control of hotter/colder rooms in your premises. Smart vents are required for creating the physical zones.
 
 
 

@@ -143,7 +143,7 @@ If you get a blank screen after pressing 'Next or you get the following error: "
 
 After about 1 minute, You should see your newly Next devices instantiated under:
 
-a) https://graph.api.smartthings.com/device/list
+a) https://graph.api.smartthings.com/device/list (or whatever your shard is)
 
 And also
 
@@ -151,7 +151,7 @@ b) Under the ST mobile app, under MyHome/Things (main menu at the bottom of the 
 
 # 6) To populate the UI fields for your newly created device(s), press the "refresh" tile </b>
 
-You may have to hit the 'refresh' button on your newly created Next devices as the smartThings UI is not always responsive. 
+If the fields are blank, you may have to hit the 'refresh' button on your newly created Next devices as the smartThings UI is not always responsive. 
 
 
 # 7) (Optional) Set device's preferences 

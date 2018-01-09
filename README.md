@@ -124,7 +124,7 @@ d) Click on AppSettings in the middle of the screen which should expand the view
 
 e) Copy and paste the productId and product secret keys to the clientId and private key fields respectively
 
-<b>PLEASE MAKE SURE TO NOT INSERT ANY SPACES BEFORE OR AFTER THE KEYS IN EACH FIELD!!</b>
+<b>PLEASE MAKE SURE TO NOT INSERT ANY SPACES BEFORE OR AFTER THE KEYS IN EACH FIELD, JUST COPY THE FIELD AS IS!!</b>
 
 f) Hit the "SAVE" Button at the bottom
 

@@ -215,7 +215,7 @@ http://thingsthataresmart.wiki/index.php?title=ScheduleTstatZones
 
 The smartapp that enables Multi Zoned Heating/Cooling Solutions based on any ST connected thermostats/sensors- - coupled with smart vents (optional, can be any Flair, Keen Home, EcoVent, EcoNet smart vents) for better temp settings control throughout your home". 
 
-The smartapp will use the thermostat's setpoints as baselines for targetet heating/cooling based on the concept of virtual/physical zones.
+The smartapp will use the thermostat's setpoints as baselines for targeted heating/cooling based on the concept of virtual/physical zones.
 
 The smartapp can also control multiple Minisplit/Windows unit and portable heaters/coolers inside your scheduled zones (based on the Flair HVACUnit device, see http://thingsthataresmart.wiki/index.php?title=My_Flair_HVac_Unit).
 

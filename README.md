@@ -174,9 +174,6 @@ You only need to edit the following parameters
     (a) <trace> when needed, set to true to get more tracing (no spaces)
     (b) <logFilter:1..5> Values=[Level 1=ERROR only,2=<Level 1+WARNING>,3=<2+INFO>,4=<3+DEBUG>,5=<4+TRACE>]
 
-    P.S. Don't enter any values for the appKey, privateKey and any serial Id numbers as the values are populated by the
-    Service Manager by default during the authentification flow.
-
 
 # 8) Use some of the Zoned Heating/Cooling Smartapps available (optional)
 

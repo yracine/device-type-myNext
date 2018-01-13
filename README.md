@@ -120,9 +120,13 @@ c) Click on the NextManager smartapp
 
 d) Click on the App Settings button in the upper right corner
 
-d) Click on AppSettings in the middle of the screen which should expand the view
+d) Click on Settings in the middle of the screen which should expand the view to AppSettings
+
 
 e) Copy and paste the productId and product secret keys to the clientId and private key under Settings/AppSettings (not oAuth as those fields are reserved for ST) fields respectively
+
+For a visual, refer to:
+http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2310:_I_don.27t_know_where_to_copy_the_productId_and_product_serial_keys_in_MyNextManager
 
 <b>PLEASE MAKE SURE TO NOT INSERT ANY SPACES BEFORE OR AFTER THE KEYS IN EACH FIELD, JUST COPY THE FIELD AS IS!!</b>
 

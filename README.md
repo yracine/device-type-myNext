@@ -122,7 +122,7 @@ d) Click on the App Settings button in the upper right corner
 
 d) Click on AppSettings in the middle of the screen which should expand the view
 
-e) Copy and paste the productId and product secret keys to the clientId and private key under Settings/AppSettings (not oAuth) fields respectively
+e) Copy and paste the productId and product secret keys to the clientId and private key under Settings/AppSettings (not oAuth as those fields are reserved for ST) fields respectively
 
 <b>PLEASE MAKE SURE TO NOT INSERT ANY SPACES BEFORE OR AFTER THE KEYS IN EACH FIELD, JUST COPY THE FIELD AS IS!!</b>
 

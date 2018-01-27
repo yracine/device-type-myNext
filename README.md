@@ -161,7 +161,7 @@ If the fields are blank, you may have to hit the 'refresh' button on your newly 
 # 7) (Optional) Set device's preferences 
 
 
-a) Go to https://graph.api.smartthings.com/device/list
+a) Go to https://graph.api.smartthings.com/device/list   (or whatever your shard is)
 
 b) Click on the Next Devices that you just created
 

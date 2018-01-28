@@ -137,6 +137,8 @@ f) Hit the "SAVE" Button at the bottom
 <b>Click on the Smartapps link in the upper section of the following Marketspace screen (last icon in the bottom menu), and then Smartapps/MyApps (last item in the list).</b>
 
 To execute MyNextManager, find MyNextManager under MarketSpace>MyApps, My Next Manager should be in the middle of the list.
+To start the Authentication with Nest, press on the "Nest Connect> Required" button in the middle of the screen.
+
 
 After being connected, click 'Next' and select your Nest devices that you want to control from Smartthings and, then press till 'Other Settings &Notification' page, and then 'Done' when finished.
 

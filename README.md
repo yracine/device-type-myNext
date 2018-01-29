@@ -132,7 +132,7 @@ http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2310:_I_
 
 f) Hit the "SAVE" Button at the bottom
 
-# 4) Under the ST mobile app, execute MyNextManager
+# 4) Under the ST mobile app, execute MyNextManager (MarketSpace>Smartapps>MyApps)
 
 <b>Click on the Smartapps link in the upper section of the following Marketspace screen (last icon in the bottom menu), and then Smartapps/MyApps (last item in the list).</b>
 

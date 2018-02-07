@@ -14,6 +14,7 @@
  *  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
  *
  *  Software Distribution is restricted and shall be done only with Developer's written approval.
+ *  Compatible with MyEcobee & MyNextTstat devices at my store: www.ecomatiqhomes.com/store
  *
  */
 definition(

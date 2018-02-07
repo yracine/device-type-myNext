@@ -15,7 +15,7 @@
  *
  * Software Distribution is restricted and shall be done only with Developer's written approval.
  * 
- * Compatible with MyEcobee device available at my store:
+ * Compatible with MyEcobee & MyNextTstat devices available at my store:
  *          http://www.ecomatiqhomes.com/#!store/tc3yr 
  *
  */

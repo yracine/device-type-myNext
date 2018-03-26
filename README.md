@@ -99,6 +99,10 @@ g) Go back to the code window, and hit the "publish/for me" button at the top ri
 
 # 3) Link your SmartThings to your Nest Account and Connect them.
 
+P.S. With the new version of MyNextManager (v1.2), you don't need to do this step anymore.  This is for reference only
+for previous users of the smartapp. With version 1.2, you can skip this step, and go to step 4 directly.
+
+
 a) In order to connect your ST account to Nest for the cloud-to-cloud integration, you need to create your own
 Nest developer account.  You should also have your own Nest Home account setup.
 

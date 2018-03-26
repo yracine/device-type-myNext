@@ -97,46 +97,7 @@ f) <b>Make sure that "enable OAuth" in Smartapp is active </b>
 g) Go back to the code window, and hit the "publish/for me" button at the top right corner 
 
 
-# 3) Link your SmartThings to your Nest Account and Connect them.
-
-P.S. With the new version of MyNextManager (v1.2), you don't need to do this step anymore.  This is for reference only
-for previous users of the smartapp. With version 1.2, you can skip this step, and go to step 4 directly.
-
-
-a) In order to connect your ST account to Nest for the cloud-to-cloud integration, you need to create your own
-Nest developer account.  You should also have your own Nest Home account setup.
-
-Please follow the detailed steps at the ST community wiki to create your own Nest developer account.
-
-https://developers.nest.com/
-
-Refer to 
-
-http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_How_to_create_a_Nest_Developer_account
-
-b) After creating your Nest developer account, you need to copy and paste the productId and product secret keys under
-your newly created My NextManager app under the IDE.
-
-Go to https://graph.api.smartthings.com/ide/apps (or whatever your shard is)
-
-
-c) Click on the NextManager smartapp 
-
-d) Click on the App Settings button in the upper right corner
-
-d) Click on Settings in the middle of the screen which should expand the view to AppSettings
-
-
-e) Copy and paste the productId and product secret keys to the clientId and private key under Settings/AppSettings (not oAuth as those fields are reserved for ST) fields respectively
-
-For a visual, refer to:
-http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2310:_I_don.27t_know_where_to_copy_the_productId_and_product_serial_keys_in_MyNextManager
-
-<b>PLEASE MAKE SURE TO NOT INSERT ANY SPACES BEFORE OR AFTER THE KEYS IN EACH FIELD, JUST COPY THE FIELD AS IS!!</b>
-
-f) Hit the "SAVE" Button at the bottom
-
-# 4) Under the ST mobile app, execute MyNextManager (MarketSpace>Smartapps>MyApps)
+# 3) Under the ST mobile app, execute MyNextManager (MarketSpace>Smartapps>MyApps)
 
 <b>Click on the Smartapps link in the upper section of the following Marketspace screen (last icon in the bottom menu), and then Smartapps/MyApps (last item in the list).</b>
 
@@ -148,7 +109,7 @@ After being connected, click 'Next' and select your Nest devices that you want t
 If you get a blank screen after pressing 'Next or you get the following error: " Error - bad state. Unable to complete page configuration", you'd need to enable oAuth as specified in step 2f) above.
 
 
-# 5) Your device(s) should now be ready to process your commands
+# 4) Your device(s) should now be ready to process your commands
 
 After about 1 minute, You should see your newly Next devices instantiated under:
 
@@ -158,12 +119,12 @@ And also
 
 b) Under the ST mobile app, under MyHome/Things (main menu at the bottom of the screen).
 
-# 6) To populate the UI fields for your newly created device(s), press the "refresh" tile </b>
+# 5) To populate the UI fields for your newly created device(s), press the "refresh" tile </b>
 
 If the fields are blank, you may have to hit the 'refresh' button on your newly created Next devices as the smartThings UI is not always responsive. 
 
 
-# 7) (Optional) Set device's preferences 
+# 6) (Optional) Set device's preferences 
 
 
 a) Go to https://graph.api.smartthings.com/device/list   (or whatever your shard is)
@@ -184,7 +145,7 @@ You only need to edit the following parameters
     (b) <logFilter:1..5> Values=[Level 1=ERROR only,2=<Level 1+WARNING>,3=<2+INFO>,4=<3+DEBUG>,5=<4+TRACE>]
 
 
-# 8) Use some of the Zoned Heating/Cooling Smartapps available (optional)
+# 7) Use some of the Zoned Heating/Cooling Smartapps available (optional)
 
 The following zoned Heating/cooling smartapps have many features to leverage your Nest Thermostat.
 

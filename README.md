@@ -55,7 +55,7 @@ INSTALLATION STEPS
 =====================
 
 
-# 1) Depending on your contribution, create one or multiple Device Handler Type(s) - DTH for My Next Tstat or Next alarm.
+# 1) Depending on your contribution, create one or multiple Device Handler Type(s) - DTH for My Next Tstat or Next alarm or Next Cam
 
 For each device (My Next Tstat, My Next Alarm, My Next Cam),
 
@@ -133,10 +133,7 @@ b) Click on the Next Devices that you just created
 
 c) Click on Preferences (edit)
 
-N.B. You can also edit the preferences under Things/Your 
-
-
-Device/Edit Device using the ST mobile app.
+N.B. You can also edit the preferences under Things/Your  Device/Edit Device using the ST mobile app.
 
 You only need to edit the following parameters
 
@@ -144,6 +141,10 @@ You only need to edit the following parameters
     (a) <trace> when needed, set to true to get more tracing (no spaces)
     (b) <logFilter:1..5> Values=[Level 1=ERROR only,2=<Level 1+WARNING>,3=<2+INFO>,4=<3+DEBUG>,5=<4+TRACE>]
 
+P.S. For the NextCam, you may want to enable public sharing if you want to have live streaming under ST. Please refer to
+the ST community wiki for more details:
+
+http://thingsthataresmart.wiki/index.php?title=MyNextCam#Issue_.2311:_I_cannot_get_live_stream_from_My_Nest_Cam
 
 # 7) Use some of the Zoned Heating/Cooling Smartapps available (optional)
 

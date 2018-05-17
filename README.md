@@ -51,6 +51,12 @@ replace https://graph.api.smartthings.com/ide/devices by https://graph-na02-usea
 
 Or use  https://consigliere-regional.api.smartthings.com/ to point to the right shard.
 
+- (f) <b>For the Nest Cam, if you want to get live streaming under ST, you'd need to share publicly your cam to make it work</b>
+
+For more details, refer to 
+
+http://thingsthataresmart.wiki/index.php?title=MyNextCam#Issue_.2311:_I_cannot_get_live_stream_from_My_Nest_Cam
+
 INSTALLATION STEPS
 =====================
 
@@ -141,10 +147,7 @@ You only need to edit the following parameters
     (a) <trace> when needed, set to true to get more tracing (no spaces)
     (b) <logFilter:1..5> Values=[Level 1=ERROR only,2=<Level 1+WARNING>,3=<2+INFO>,4=<3+DEBUG>,5=<4+TRACE>]
 
-P.S. For the NextCam, you may want to enable public sharing if you want to have live streaming under ST. Please refer to
-the ST community wiki for more details:
 
-http://thingsthataresmart.wiki/index.php?title=MyNextCam#Issue_.2311:_I_cannot_get_live_stream_from_My_Nest_Cam
 
 # 7) Use some of the Zoned Heating/Cooling Smartapps available (optional)
 

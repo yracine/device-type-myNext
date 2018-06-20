@@ -25,7 +25,7 @@ Setup time: about 10-20 minutes depending on your ST skills.
 PREREQUISITES
 ==============
 
-- a) Your Nest products operational and connected to Nest Home via the internet
+- a) Your Nest products fully operational and connected to Nest Home via the internet
 
 - b) Nest setup completed for your Nest devices.
 

@@ -65,7 +65,7 @@ INSTALLATION STEPS
 
 For each device (My Next Tstat, My Next Alarm, My Next Cam),
 
-a) Go to https://graph.api.smartthings.com/ide/devices (or whatever your shard is)
+a) Go to https://graph.api.smartthings.com/ide/devices  (or whatever your shard is and click on My Device Handlers in the IDE's top menu)
 
 b) Hit the "+New Device Handler" at the top right corner
 
@@ -82,7 +82,7 @@ f) Hit the "publish/for me" button at the top right corner (in the code window)
 
 # 2) Create a new smartapp (MyNextManager)
 
-a) Go to https://graph.api.smartthings.com/ide/apps (or whatever your shard is)
+a) Go to https://graph.api.smartthings.com/ide/apps (or whatever your shard is and click on My Smartapps in the IDE's top menu)
 
 b) Hit the "+New SmartApp" at the top right corner
 
@@ -119,7 +119,7 @@ If you get a blank screen after pressing 'Next or you get the following error: "
 
 After about 1 minute, You should see your newly Next devices instantiated under:
 
-a) https://graph.api.smartthings.com/device/list (or whatever your shard is)
+a) https://graph.api.smartthings.com/device/list (or whatever your shard is and click on My Devices in the IDE's top menu)
 
 And also
 
@@ -133,7 +133,7 @@ If the fields are blank, you may have to hit the 'refresh' button on your newly 
 # 6) (Optional) Set device's preferences 
 
 
-a) Go to https://graph.api.smartthings.com/device/list   (or whatever your shard is)
+a) Go to https://graph.api.smartthings.com/device/list   (or whatever your shard is and click on My Devices in the IDE's top menu)
 
 b) Click on the Next Devices that you just created
 

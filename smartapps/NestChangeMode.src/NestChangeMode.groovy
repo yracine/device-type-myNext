@@ -29,8 +29,8 @@ definition(
 	description:
 	"Change the Nest mode (Away, Home) manually (by pressing the app's play button) or automatically at the Nest thermostat(s) based on the ST hello mode(s)",
 	category: "My Apps",
-    iconUrl: "${getCustomImagePath()}WorksWithNest.jpg",
-    iconX2Url: "${getCustomImagePath()}WorksWithNest.jpg"
+	iconUrl: "${getCustomImagePath()}WorksWithNest.jpg",
+	iconX2Url: "${getCustomImagePath()}WorksWithNest.jpg"
 )
 
 private def get_APP_VERSION() {

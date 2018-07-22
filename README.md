@@ -27,7 +27,7 @@ PREREQUISITES
 
 - a) Your Nest products fully operational and connected to Nest Home via the internet
 
-- b) Nest setup completed for your Nest devices under your Nest Primary account (don't use any Nest secondary accounts for the integation with SmartThings!!)
+- b) Nest setup completed for your Nest devices under your Nest Primary account (the one you’ve originally used to link your Nest devices; don't use any Nest secondary accounts for the integation with SmartThings!!).  
 
 
 - (c) <b>Location set for your ST account  </b>

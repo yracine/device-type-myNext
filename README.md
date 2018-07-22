@@ -27,7 +27,7 @@ PREREQUISITES
 
 - a) Your Nest products fully operational and connected to Nest Home via the internet
 
-- b) Nest setup completed for your Nest devices under your Nest Primary account (the one you’ve originally used to link your Nest devices; don't use any Nest secondary accounts for the integation with SmartThings!!).  
+- b) <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!).  
 
 
 - (c) <b>Location set for your ST account  </b>
@@ -113,7 +113,7 @@ http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_d
 
 To execute MyNextManager, find the MyNextManager smartapp under MarketSpace>Smartapps>MyApps, My Next Manager should be in the middle of the list. To start the Authentication with Nest, press on the "Nest Connect> Required" button in the middle of the screen.  
 
-<b>When prompted for the login, you'd need to use your  Nest primary account</b>, not any secondary accounts as it will not work otherwise. 
+<b>When prompted for the login, you'd need to use your  Nest primary account -the one that you originally used to link your Nest devices) </b>; not any secondary accounts as it will not work otherwise. 
 
 
 After being connected, click 'Next' and select your Nest devices that you want to control from Smartthings and, then press till 'Other Settings &Notification' page, and then 'Done' when finished.

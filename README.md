@@ -34,7 +34,7 @@ PREREQUISITES
 
 Under the ST mobile app, click on the 3-horizontal lines- "hamburger"- menu in the upper left corner, and then the "gear'" icon to review your location and save it.
 
-- (e) <b>Determine your shard, please consult this thread: </b>
+- (d) <b>Determine your shard, please consult this thread: </b>
 
 
 https://community.smartthings.com/t/faq-how-to-find-out-what-shard-cloud-slice-ide-url-your-account-location-is-on/53923
@@ -51,7 +51,7 @@ replace https://graph.api.smartthings.com/ide/devices by https://graph-na02-usea
 
 Or use  https://consigliere-regional.api.smartthings.com/ to point to the right shard.
 
-- (f) <b>For the Nest Cam, if you want to get live streaming under ST, you'd need to share publicly your cam to make it work</b>
+- (e) <b>For the Nest Cam, if you want to get live streaming under ST, you'd need to share publicly your cam to make it work</b>
 
 For more details, refer to 
 

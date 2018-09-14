@@ -155,7 +155,35 @@ You only need to edit the following parameters
 
 
 
-# 7) Use some of the Zoned Heating/Cooling Smartapps available (optional)
+# 7) Use some of my smartapps (optional)
+
+
+
+/****************************************************
+
+<b>a) NestChangeMode</b>
+
+/****************************************************
+
+Change your Nest Away/Home settings according to your ST (location) hello home mode.
+
+
+
+/****************************************************
+
+<b>b) TstatStateTriggerHA</b>
+
+/****************************************************
+
+The above smartapp allows a ST user to trigger some switch(es) (turn on/off or flash) and/or trigger a hello phrase routine when the thermostat is cooling/heating/running the fan/or idle.
+
+/****************************************************
+
+<b>c) Zoning smartapps
+
+/****************************************************
+
+
 
 The following zoned Heating/cooling smartapps have many features to leverage your Nest Thermostat.
 
@@ -182,7 +210,7 @@ http://www.ecomatiqhomes.com/store
 
 /****************************************************
 
-<b>a) ScheduleTstatZones</b>
+<b>ScheduleTstatZones</b>
 
 /****************************************************
 
@@ -200,7 +228,7 @@ The smartapp can also control multiple Minisplit/Windows unit and portable heate
 
 /****************************************************
 
-<b>c) ScheduleRoomTempControl</b>
+<b> ScheduleRoomTempControl</b>
 
 /****************************************************
 

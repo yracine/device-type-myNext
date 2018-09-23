@@ -32,7 +32,7 @@ PREREQUISITES
 
 - (c) <b>Location set for your ST account  </b>
 
-Under the ST mobile app, click on the 3-horizontal lines- "hamburger"- menu in the upper left corner, and then the "gear'" icon to review your location and save it.
+Under the ST classic mobile app, click on the 3-horizontal lines- "hamburger"- menu in the upper left corner, and then the "gear'" icon to review your location and save it.
 
 - (d) <b>Determine your shard, please consult this thread: </b>
 
@@ -107,7 +107,7 @@ If the instructions above are not clear enough, you can refer to the troubleshoo
 http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp
 
 
-# 3) Under the ST mobile app, execute MyNextManager (MarketSpace>Smartapps>MyApps)
+# 3) Under the ST classic mobile app, execute MyNextManager (MarketSpace>Smartapps>MyApps)
 
 <b>Click on the Smartapps link in the upper section of the following Marketspace screen (last icon in the bottom menu), and then Smartapps/MyApps (last item in the list).</b>
 
@@ -129,7 +129,7 @@ a) https://graph.api.smartthings.com/device/list (or whatever your shard is and 
 
 And also
 
-b) Under the ST mobile app, under MyHome/Things (main menu at the bottom of the screen).
+b) Under the ST classic mobile app, under MyHome/Things (main menu at the bottom of the screen).
 
 # 5) To populate the UI fields for your newly created device(s), press the "refresh" tile </b>
 
@@ -145,7 +145,7 @@ b) Click on the Next Devices that you just created
 
 c) Click on Preferences (edit)
 
-N.B. You can also edit the preferences under Things/Your  Device/Edit Device using the ST mobile app.
+N.B. You can also edit the preferences under Things/Your Device/Edit Device using the app.
 
 You only need to edit the following parameters
 

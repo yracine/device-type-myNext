@@ -30,7 +30,7 @@ PREREQUISITES
 - b) <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!).  
 
 
-- (c) <b>Location set for your ST account  </b>
+- (c) <b>Location set for your ST account under the ST classic mobile app </b>
 
 Under the ST classic mobile app, click on the 3-horizontal lines- "hamburger"- menu in the upper left corner, and then the "gear'" icon to review your location and save it.
 

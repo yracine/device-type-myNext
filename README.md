@@ -154,6 +154,8 @@ You only need to edit the following parameters
     (b) <logFilter:1..5> Values=[Level 1=ERROR only,2=<Level 1+WARNING>,3=<2+INFO>,4=<3+DEBUG>,5=<4+TRACE>]
 
 
+P.S. Don't enter any values for the internal ID or the structure ID as those values are provided by the Service Manager.
+
 
 # 7) Use some of my smartapps (optional)
 

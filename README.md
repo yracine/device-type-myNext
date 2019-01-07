@@ -27,7 +27,7 @@ PREREQUISITES
 
 - a) Your Nest products fully operational and connected to Nest Home via the internet
 
-    Please not that all Nest devices are supported <b>except</b> the Nest thermostat E in the UK (with the heat link) and the Nest Secure Alarm.  The Nest Hello only appears as a Nest Cam (not other special features).
+    Please note that all Nest devices are supported <b>except</b> the Nest thermostat E in the UK (with the heat link) and the Nest Secure Alarm.  The Nest Hello only appears as a Nest Cam (not other special features).
 
 - b) <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!).  
 

@@ -115,6 +115,7 @@ To execute MyNextManager, find the MyNextManager smartapp under MarketSpace>Smar
 
 <b>When prompted for the login, you'd need to use your  Nest primary account -the one that you originally used to link your Nest devices) </b>; not any secondary accounts as it will not work otherwise. 
 
+After signing-in, you need to accept all the permissions needed to connect your Nest devices to SmartThings by scrolling down and pressing the accept button at the bottom of the page.
 
 After being connected, click 'Next' and select your Nest devices that you want to control from Smartthings and, then press till 'Other Settings &Notification' page, and then 'Done' when finished.
 

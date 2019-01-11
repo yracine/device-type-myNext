@@ -162,6 +162,8 @@ P.S. Don't enter any values for the internal ID or the structure ID as those val
 
 # 7) Use some of my smartapps (optional)
 
+Some complimentary smartapps at my github, refer to:
+
 https://github.com/yracine/device-type-myNext/tree/master/smartapps
 
 /****************************************************

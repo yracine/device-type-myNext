@@ -162,7 +162,7 @@ P.S. Don't enter any values for the internal ID or the structure ID as those val
 
 # 7) Use some of my smartapps (optional)
 
-
+https://github.com/yracine/device-type-myNext/tree/master/smartapps
 
 /****************************************************
 
@@ -172,11 +172,18 @@ P.S. Don't enter any values for the internal ID or the structure ID as those val
 
 Change your Nest Away/Home settings according to your ST (location) hello home mode.
 
+/****************************************************
+
+<b>b) NestGetTips and EcobeeGenerateXXXstats/b>
+
+/****************************************************
+
+The smartapp allows the user to get comfort & energy tips based on his/her indoor/outdoor conditions at home.
 
 
 /****************************************************
 
-<b>b) TstatStateTriggerHA</b>
+<b>c) TstatStateTriggerHA</b>
 
 /****************************************************
 
@@ -184,10 +191,9 @@ The above smartapp allows a ST user to trigger some switch(es) (turn on/off or f
 
 /****************************************************
 
-<b>c) Zoning smartapps
+<b>d) Zoning smartapps
 
 /****************************************************
-
 
 
 The following zoned Heating/cooling smartapps have many features to leverage your Nest Thermostat.

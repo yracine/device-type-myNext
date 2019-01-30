@@ -34,7 +34,9 @@ PREREQUISITES
 
 - (c) <b>Location set for your ST account under the ST classic mobile app </b>
 
-Under the ST classic mobile app, click on the 3-horizontal lines- "hamburger"- menu in the upper left corner, and then the "gear'" icon to review your location and save it.
+Under the ST classic mobile app, click on the 3-horizontal lines- "hamburger"- menu in the upper left corner, and then the "gear'" icon to review your location and save it.  You can refer to the SmartThings' documentation for more details.
+
+https://support.smartthings.com/hc/en-us/articles/115002084986-Locations-in-the-SmartThings-app
 
 - (d) <b>Determine your shard, please consult this thread: </b>
 

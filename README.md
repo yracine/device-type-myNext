@@ -86,7 +86,7 @@ f) Hit the "publish/for me" button at the top right corner (in the code window)
 
 # 2) Create a new smartapp (MyNextManager)
 
-a) Go to https://graph.api.smartthings.com/ide/apps (or whatever your shard is and click on My Smartapps in the IDE's top menu)
+a) Go to https://graph.api.smartthings.com/ide/apps (or whatever your shard is) and click on My Smartapps in the IDE's top menu)
 
 b) Hit the "+New SmartApp" at the top right corner
 

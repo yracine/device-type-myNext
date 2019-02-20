@@ -129,6 +129,7 @@ At the end of the authorization flow, you may have to press "Save" several times
 
 
 
+
 # 4) Your device(s) should now be ready to process your commands
 
 After about 1 minute, You should see your newly Next devices instantiated under:
@@ -142,6 +143,12 @@ b) Under the ST classic mobile app, under MyHome/Things (main menu at the bottom
 # 5) To populate the UI fields for your newly created device(s), press the "refresh" tile </b>
 
 If the fields are blank, you may have to hit the 'refresh' button on your newly created Next devices as the smartThings UI is not always responsive. 
+
+If you have to create many Nest devices under SmartThings, due to Nest's rate limiting issues, you may have to wait before seeing some values coming from Nest.
+
+Refer to 
+
+https://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.238:_There_is_a_groovyx.net.http.HttpResponseException:_Too_Many_Requests_exception_in_my_logs
 
 
 # 6) (Optional) Set device's preferences 

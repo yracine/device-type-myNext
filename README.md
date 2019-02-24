@@ -121,7 +121,10 @@ To execute MyNextManager, find the MyNextManager smartapp under MarketSpace>Smar
 
 After signing-in, you need to accept all the permissions needed to connect your Nest devices to SmartThings by scrolling down and pressing the accept button at the bottom of the page.
 
-After being connected, click 'Next' and select your Nest devices that you want to control from Smartthings and, then press till 'Other Settings &Notification' page, and then 'Done' when finished.
+After being connected, click 'Next' and select your Nest devices that you want to control from Smartthings and, then press till 'Other Settings &Notification' page, and then 'Done' or 'Save' when finished.
+
+*************************************************************************************************************************************
+N.B.
 
 If you get a blank screen after pressing 'Next or you get the following error: "Error - bad state' or 'Java.lang.NullPointerException: Cannot get property 'accessToken' on null object" in the IDE', you'd need to enable oAuth as specified in step 2f) above.
 
@@ -129,7 +132,7 @@ If you get a blank screen after pressing 'Next or you get the following error: "
  
 Also, depending on the ST platform status, you may have to press "Save" several times if you have the following error message: "Error processing your request - please try again".  This is due to some ST platform timeouts due to rate limiting.</b> 
  
-
+*************************************************************************************************************************************
 
 
 # 4) Your device(s) should now be ready to process your commands

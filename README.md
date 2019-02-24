@@ -125,7 +125,9 @@ After being connected, click 'Next' and select your Nest devices that you want t
 
 If you get a blank screen after pressing 'Next or you get the following error: "Error - bad state' or 'Java.lang.NullPointerException: Cannot get property 'accessToken' on null object" in the IDE', you'd need to enable oAuth as specified in step 2f) above.
 
-At the end of the authorization flow, you may have to press "Save" several times if you have the following error message: "Error processing your request - please try again" or "Unexpected error".  This is due to some ST platform timeouts due to rate limiting.
+<b> At the end of the authorization flow,  if you have the following error message: "Unexpected error" even if you press several times, this probably means that you have not "saved & published" one of the Device Handler Types (MyNextTstat,MyNextAlarm,MyNextCam) under the right shard.  Refer to the prerequisites & step 1 for more details.
+ 
+Also, depending on the ST platform status, you may have to press "Save" several times if you have the following error message: "Error processing your request - please try again".  This is due to some ST platform timeouts due to rate limiting.</b> 
  
 
 

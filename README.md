@@ -55,7 +55,7 @@ replace https://graph.api.smartthings.com/ide/devices by https://graph-na02-usea
 
 Or use  https://consigliere-regional.api.smartthings.com/ to point to the right shard.
 
-- (e) <b>For the Nest Cam, if you want to get live streaming under ST, you'd need to share publicly your cam to make it work</b>
+- (e) <b>For the Nest Cam, if you want to get live streaming under ST, you'd need to share publicly and turn off the 2-step authentication for your cam (as the Nest-ST integration cannot support it) to make it work. </b>
 
 For more details, refer to 
 

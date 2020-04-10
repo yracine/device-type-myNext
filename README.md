@@ -25,22 +25,22 @@ Setup time: about 15-25 minutes depending on your ST skills.
 PREREQUISITES
 ==============
 
-- a) Your Nest products fully operational and connected to Nest Home via the internet
+- a) [Nest] Your Nest products fully operational and connected to Nest Home via the internet
 
     Please note that all Nest thermostat devices are supported <b>except</b> the Nest thermostat E in the UK (with the heat link) and the Nest Secure Alarm.  Next Cams & Door Bells are not supported.
 
-- b) <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!).  
+- b) [Nest] <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!).  
   
-- (c) The installation must proceed with the SmartThings classic mobile app, so you have to download it first from your appStore. This is required as any custom DTHs can only be instantiated or created via the ST classic mobile app </b>
+- (c) [ST CLASSIC APP] The installation must proceed with the SmartThings classic mobile app, so you have to download it first from your appStore. This is required as any custom DTHs can only be instantiated or created via the ST classic mobile app </b>
 
-- (d) <b>Location set for your ST account under the ST classic mobile app </b>
+- (d) [ST CLASSIC APP] <b>Location set for your ST account under the ST classic mobile app </b>
 
 
 <b>Under the ST classic mobile app</b>, click on the 3-horizontal lines- "hamburger"- menu in the upper left corner, and then the "gear'" icon to review your location and save it.  You can refer to the SmartThings' documentation for more details.
 
 https://support.smartthings.com/hc/en-us/articles/205956850-How-to-edit-Location-settings
 
-- (e) <b>Determine your shard, please consult this thread: </b>
+- (e) [ST IDE] <b>Determine your shard, please consult this thread: </b>
 
 
 https://community.smartthings.com/t/faq-how-to-find-out-what-shard-cloud-slice-ide-url-your-account-location-is-on/53923
@@ -65,15 +65,15 @@ Google recently introduced reCAPTCHA when logging to Nest. That means username a
 
 Instead, you have to obtain  `user_id ` and  `access_token` for your account by logging in manually. If you change your Nest account's password or 2FA settings, you will need to remove your old Nest devices (from all automation scenes/routines/smartapps) and redo the installation steps.
 
-1. To do that, open `developer tools` in your Chrome browser, switch to the `Network` tab, hit `preserve Logs`, log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=157XXXXXX. You can use the filter "session" to get the exact info needed.
+1. [Chrome] To do that, open `developer tools` in your Chrome browser, switch to the `Network` tab, hit `preserve Logs`, log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=157XXXXXX. You can use the filter "session" to get the exact info needed.
 
 For some visual guidelines, refer to screenshots #h), i) and j) in the link below
 
 http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp
 
 
-2. You will find `user_id` and `access_token`  in the response to the request.
-3. Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE)
+2. [Chrome] You will find `user_id` and `access_token`  in the response to the request.
+3. [Chrome->ST] Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE)
 
 
 
@@ -92,18 +92,18 @@ The values of `issue_token` and `cookie` are specific to your Google Account. To
 
 Please note that if you change your Google account's password or 2FA settings, you will need to remove your old Nest devices (from all automation scenes/routines/smartapps) and redo the installation steps.
 
-1. Open a Chrome browser tab in Incognito Mode (or clear your cache).
-2. Open Developer Tools (View/Developer/Developer Tools).
-3. Click on 'Network' tab. Make sure 'Preserve Log' is checked.
-4. In the 'Filter' box, enter `issueToken`
-5. Go to `home.nest.com`, and click 'Sign in with Google'. Log into your account.
-6. One network call (beginning with `iframerpc`) will appear in the Dev Tools window. Click on it.
-7. In the Headers tab, under General, copy the entire `Request URL` (beginning with `https://accounts.google.com`, ending with `nest.com`). This is your `"google_issue_token"` in App settings.
-8. In the 'Filter' box, enter `oauth2/iframe`
-9. Several network calls will appear in the Dev Tools window. Click on the last `iframe` call.
-10. In the Headers tab, under Request Headers, copy the entire `cookie` (beginning `OCAK=...` - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name)
-11. This is your "cookie" in the Settings section of the smartapp (ST IDE). In order to copy the whole cookie, you'd need to split it into different google_cookie_p* fields in the Settings section as the SmartThings platform doesn't support long text variables. If the text is too long, SmartThings will report an exception (500) when you try to save a too long cookie field. 
-12. Make sure that all your google_cookie_p* fields contain the whole cookie from Google.
+1. [Chrome] Open a Chrome browser tab in Incognito Mode (or clear your cache).
+2. [Chrome] Open Developer Tools (View/Developer/Developer Tools).
+3. [Chrome] Click on 'Network' tab. Make sure 'Preserve Log' is checked.
+4. [Chrome] In the 'Filter' box, enter `issueToken`
+5. [Chrome] Go to `home.nest.com`, and click 'Sign in with Google'. Log into your account.
+6. [Chrome] One network call (beginning with `iframerpc`) will appear in the Dev Tools window. Click on it.
+7. [Chrome] In the Headers tab, under General, copy the entire `Request URL` (beginning with `https://accounts.google.com`, ending with `nest.com`). This is your `"google_issu [Chrome] e_token"` in App settings.
+8. [Chrome] In the 'Filter' box, enter `oauth2/iframe`
+9. [Chrome] Several network calls [Chrome->ST] will [Chrome->ST] appear in the Dev Tools window. Click on the last `iframe` call.
+10.[Chrome] In the Headers tab, under Request Headers, copy the entire `cookie` (beginning `OCAK=...` - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name)
+11. [Chrome->ST IDE] This is your "cookie" in the Settings section of the smartapp (ST IDE). In order to copy the whole cookie, you'd need to split it into different google_cookie_p* fields in the Settings section as the SmartThings platform doesn't support long text variables. If the text is too long, SmartThings will report an exception (500) when you try to save a too long cookie field. 
+12. [Chrome->ST IDE]  Make sure that all your google_cookie_p* fields contain the whole cookie from Google.
 
 
 
@@ -112,46 +112,45 @@ Please note that if you change your Google account's password or 2FA settings, y
 
 For each device (My NextTstatV2, My NextAlarmV2, My NextSensorV2),
 
-a) Go to https://graph.api.smartthings.com/ide/devices  (or whatever your shard is and click on My Device Handlers in the IDE's top menu)
+a) [ST IDE]  Go to https://graph.api.smartthings.com/ide/devices  (or whatever your shard is and click on My Device Handlers in the IDE's top menu)
 
-b) Hit the "+New Device Handler" at the top right corner
+b) [ST IDE] Hit the "+New Device Handler" at the top right corner
 
-c) Hit the "From Code" tab on the left corner
+c) [ST IDE] Hit the "From Code" tab on the left corner
 
-d) Copy and paste the code from the corresponding txt file in the zip
+d) [ST IDE] Copy and paste the code from the corresponding txt file in the zip
 
 <b>Following your financial contribution at www.ecomatiqhomes.com/store, the code has been sent to you by Sellfy via your paypal verified email address.</b>
 
-e) Hit the create button at the bottom
+e) [ST IDE] Hit the create button at the bottom
 
-f) Hit the "publish/for me" button at the top right corner (in the code window)
+f) [ST IDE] Hit the "publish/for me" button at the top right corner (in the code window)
 
 
 # 2) Create a new smartapp (MyNextManagerV2)
 
 a) Go to https://graph.api.smartthings.com/ide/apps (or whatever your shard is, and click on My Smartapps in the IDE's top menu)
 
-b) Hit the "+New SmartApp" at the top right corner
+b) [ST IDE] Hit the "+New SmartApp" at the top right corner
 
-c) Hit the "From Code" tab on the left corner
+c) [ST IDE] Hit the "From Code" tab on the left corner
 
-d) Copy and paste the code from the corresponding txt file in the zip  
+d) [ST IDE] Copy and paste the code from the corresponding txt file in the zip  
 
 <b>Following your financial contribution at www.ecomatiqhomes.com/store, the code has been sent to you by Sellfy via your paypal verified email address.</b>
 
-e) Hit the create button at the bottom
+e) [ST IDE] Hit the create button at the bottom
 
-f) <b>Make sure that "enable OAuth" in Smartapp is active </b>
+f) [ST IDE] <b>Make sure that "enable OAuth" in Smartapp is active </b>
 
 * Goto app settings (top right corner, click on it)
 * Click on Oauth (middle of the page), and enable OAuth in Smart app
 * Hit "Update" at the bottom
+ back to the code window, and hit the "publish/for me" button at the top right corner
 
-g) Go back to the code window, and hit the "publish/for me" button at the top right corner
+h) [ST IDE] Click on App Settings and copy the required login info whether you're still a Nest account user or a Google Account user.
 
-h) Click on App Settings and copy the required login info whether you're still a Nest account user or a Google Account user.
-
-i) Click on the update button at the bottom to save your login information from Nest/Google.
+i) [ST IDE] Click on the update button at the bottom to save your login information from Nest/Google.
 
 If the instructions above are not clear enough, you can refer to the troubleshooting section below with some pictures:
 
@@ -160,28 +159,28 @@ http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_d
 
 # 3) Under the ST classic mobile app, execute MyNextManagerV2 (MarketSpace>Smartapps>MyApps)
 
-<b> Go to the IDE in order to watch for any exceptions/errors in the logs.
+[ST IDE] <b>  Go to the IDE in order to watch for any exceptions/errors in the logs.
     
 https://graph.api.smartthings.com/ide/logs (or whatever your shard is, under Live Logging in the IDE)
 
 You can click at the top of the window on the smartapp name to filter the logs.
 
-<b>Click on the Smartapps link in the upper section of the following Marketspace screen (last icon in the bottom menu), and then Smartapps/MyApps (last item in the list).</b>
+[ST IDE] <b>Click on the Smartapps link in the upper section of the following Marketspace screen (last icon in the bottom menu), and then Smartapps/MyApps (last item in the list).</b>
 
-To execute MyNextManagerV2, find the MyNextManagerV2 smartapp under MarketSpace>Smartapps>MyApps, My NextManagerV2 should be in the middle of the list. To start the Authentication with Nest, press Next on the first page.  
+[ST CLASSIC APP] To execute MyNextManagerV2, find the MyNextManagerV2 smartapp under MarketSpace>Smartapps>MyApps, My NextManagerV2 should be in the middle of the list. To start the Authentication with Nest, press Next on the first page.  
 
-<b> Check the logs for any installation errors.  Your login info may not have been copied correctly in the MyNextManagerV2's App Settings section.
+[ST IDE] <b> Check the logs for any installation errors.  Your login info may not have been copied correctly in the MyNextManagerV2's App Settings section.
     
 As a reminder for the Google account users, in order to copy the whole cookie, you'd need to split it into different fields in AppSettings as the SmartThings platform doesn't support long text variables.
     
 *************************************************************************************************************************************
 N.B. If you have any errors:
 
-If you get a blank screen after pressing 'Next or you get the following error: "Error - bad state' or 'Java.lang.NullPointerException: Cannot get property 'accessToken' on null object" in the IDE', you'd need to enable oAuth as specified in step 2f) above.
+[ST CLASSIC APP] If you get a blank screen after pressing 'Next or you get the following error: "Error - bad state' or 'Java.lang.NullPointerException: Cannot get property 'accessToken' on null object" in the IDE', you'd need to enable oAuth as specified in step 2f) above.
 
-<b> At the end of the authorization flow,  if you have the following error message: "Unexpected error" even if you press several times, this probably means that you have not "saved & published" one of the Device Handler Types (MyNextTstatV2,MyNextAlarmV2,MyNextSensorV2) under the right shard.  Refer to the prerequisites & step 1 for more details.
+[ST CLASSIC APP] <b> At the end of the authorization flow,  if you have the following error message: "Unexpected error" even if you press several times, this probably means that you have not "saved & published" one of the Device Handler Types (MyNextTstatV2,MyNextAlarmV2,MyNextSensorV2) under the right shard.  Refer to the prerequisites & step 1 for more details.
  
-Also, depending on the ST platform status, you may have to press "Save" several times if you have the following error message: "Error processing your request - please try again".  This is due to some ST platform timeouts due to rate limiting.</b> 
+[ST CLASSIC APP] Also, depending on the ST platform status, you may have to press "Save" several times if you have the following error message: "Error processing your request - please try again".  This is due to some ST platform timeouts due to rate limiting.</b> 
  
 *************************************************************************************************************************************
 
@@ -190,31 +189,31 @@ Also, depending on the ST platform status, you may have to press "Save" several 
 
 After about 1 minute, You should see your newly Next devices instantiated under:
 
-a) https://graph.api.smartthings.com/device/list (or whatever your shard is and click on My Devices in the IDE's top menu)
+[ST IDE] a) https://graph.api.smartthings.com/device/list (or whatever your shard is and click on My Devices in the IDE's top menu)
 
 And also
 
-b) Under the ST classic mobile app, under MyHome/Things (main menu at the bottom of the screen).
+[ST CLASSIC APP] b) Under the ST classic mobile app, under MyHome/Things (main menu at the bottom of the screen).
 
 # 5) To populate the UI fields for your newly created device(s), press the "refresh" tile </b>
 
-If the fields are blank, you may have to hit the 'refresh' button on your newly created Next devices as the smartThings UI is not always responsive. 
+[ST CLASSIC APP] If the fields are blank, you may have to hit the 'refresh' button on your newly created Next devices as the smartThings UI is not always responsive. 
 
 
 # 6) (Optional) Set device's preferences 
 
 
-a) Go to https://graph.api.smartthings.com/device/list   (or whatever your shard is and click on My Devices in the IDE's top menu)
+a) [ST IDE] Go to https://graph.api.smartthings.com/device/list   (or whatever your shard is and click on My Devices in the IDE's top menu)
 
-b) Click on the Next Devices that you just created
+b) [ST IDE] Click on the Next Devices that you just created
 
-c) Click on Preferences (edit)
+c) [ST IDE] Click on Preferences (edit)
 
-N.B. You can also edit the preferences under Things/Your Device/Edit Device using the app.
+N.B. [ST CLASSIC APP] You can also edit the preferences under Things/Your Device/Edit Device using the app.
 
 You only need to edit the following parameters
 
-
+[ST IDE]
     (a) <trace> when needed, set to true to get more tracing (no spaces)
     (b) <logFilter:1..5> Values=[Level 1=ERROR only,2=<Level 1+WARNING>,3=<2+INFO>,4=<3+DEBUG>,5=<4+TRACE>]
 

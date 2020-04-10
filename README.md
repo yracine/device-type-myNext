@@ -165,7 +165,7 @@ https://graph.api.smartthings.com/ide/logs (or whatever your shard is, under Liv
 
 You can click at the top of the window on the smartapp name to filter the logs.
 
-[ST IDE] <b>Click on the Smartapps link in the upper section of the following Marketspace screen (last icon in the bottom menu), and then Smartapps/MyApps (last item in the list).</b>
+[ST CLASSIC APP] <b>Click on the Smartapps link in the upper section of the following Marketspace screen (last icon in the bottom menu), and then Smartapps/MyApps (last item in the list).</b>
 
 [ST CLASSIC APP] To execute MyNextManagerV2, find the MyNextManagerV2 smartapp under MarketSpace>Smartapps>MyApps, My NextManagerV2 should be in the middle of the list. To start the Authentication with Nest, press Next on the first page.  
 

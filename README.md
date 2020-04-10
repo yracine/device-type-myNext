@@ -73,7 +73,7 @@ http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_d
 
 
 2. You will find `user_id` and `access_token`  in the response to the request.
-3. Copy over the Nest login information to the corresponding nest* fields in App Settings
+3. Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE)
 
 
 
@@ -102,7 +102,7 @@ Please note that if you change your Google account's password or 2FA settings, y
 8. In the 'Filter' box, enter `oauth2/iframe`
 9. Several network calls will appear in the Dev Tools window. Click on the last `iframe` call.
 10. In the Headers tab, under Request Headers, copy the entire `cookie` (beginning `OCAK=...` - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name)
-11. This is your "cookie" in the Settings section of the smartapp. In order to copy the whole cookie, you'd need to split it into different google_cookie_p* fields in the Settings section as the SmartThings platform doesn't support long text variables. If the text is too long, SmartThings will report an exception (500) when you try to save a too long cookie field. 
+11. This is your "cookie" in the Settings section of the smartapp (ST IDE). In order to copy the whole cookie, you'd need to split it into different google_cookie_p* fields in the Settings section as the SmartThings platform doesn't support long text variables. If the text is too long, SmartThings will report an exception (500) when you try to save a too long cookie field. 
 12. Make sure that all your google_cookie_p* fields contain the whole cookie from Google.
 
 

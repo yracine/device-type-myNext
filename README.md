@@ -66,7 +66,7 @@ http://thingsthataresmart.wiki/index.php?title=MyNextCam#Issue_.2311:_I_cannot_g
 LOGIN INFO REQUIRED FOR NEST ACCOUNT USERS (read-write modes under ST)
 ======================================================================
 
-Google recently introduced reCAPTCHA when logging to Nest. That means username and password cannot be used directly any more. Instead, you have to obtain user_id and access_token for your account by logging in manually. If you change your Nest account's password or 2FA settings, you will need to remove your old Nest devices (from all automation scenes) and redo the installation steps.
+Google recently introduced reCAPTCHA when logging to Nest. That means username and password cannot be used directly any more. Instead, you have to obtain user_id and access_token for your account by logging in manually. If you change your Nest account's password or 2FA settings, you will need to remove your old Nest devices (from all automation scenes/routines/smartapps) and redo the installation steps.
 
 - To do that, open developer tools in your Chrome browser, switch to the "Network" tab, log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=1578693398448. 
 - You will find user_id and access_token in the response to the request.
@@ -76,7 +76,7 @@ Google recently introduced reCAPTCHA when logging to Nest. That means username a
 LOGIN INFO REQUIRED FOR GOOGLE ACCOUNT USERS (read-only mode devices under ST)
 ==============================================================================
 
-The values of "issue_token" and "cookie" are specific to your Google Account. To get them, follow these steps (only needs to be done once, as long as you stay logged into your Google Account). If you change your Google account's password or 2FA settings, you will need to remove your old Nest devices (from all automation scenes) and redo the installation steps.
+The values of "issue_token" and "cookie" are specific to your Google Account. To get them, follow these steps (only needs to be done once, as long as you stay logged into your Google Account). If you change your Google account's password or 2FA settings, you will need to remove your old Nest devices (from all automation scenes/routines/smartapps) and redo the installation steps.
 
 - Open a Chrome browser tab in Incognito Mode (or clear your cache).
 - Open Developer Tools (View/Developer/Developer Tools).

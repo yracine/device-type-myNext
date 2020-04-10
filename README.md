@@ -65,7 +65,7 @@ Google recently introduced reCAPTCHA when logging to Nest. That means username a
 
 Instead, you have to obtain  `user_id ` and  `access_token` for your account by logging in manually. If you change your Nest account's password or 2FA settings, you will need to remove your old Nest devices (from all automation scenes/routines/smartapps) and redo the installation steps.
 
-1. To do that, open `developer tools` in your Chrome browser, switch to the `Network` tab, hit `preserve Logs`, log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=1578693398448. You can use the filter "session" to get the exact info needed.
+1. To do that, open `developer tools` in your Chrome browser, switch to the `Network` tab, hit `preserve Logs`, log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=157XXXXXX. You can use the filter "session" to get the exact info needed.
 
 For some visual guidelines, refer to screenshots #h), i) and j) in the link below
 

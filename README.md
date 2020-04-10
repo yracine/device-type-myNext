@@ -27,7 +27,7 @@ PREREQUISITES
 
 - a) Your Nest products fully operational and connected to Nest Home via the internet
 
-    Please note that all Nest devices are supported <b>except</b> the Nest thermostat E in the UK (with the heat link) and the Nest Secure Alarm.  
+    Please note that all Nest thermostat devices are supported <b>except</b> the Nest thermostat E in the UK (with the heat link) and the Nest Secure Alarm.  Next Cams & Door Bells are not supported.
 
 - b) <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!).  
   
@@ -55,29 +55,33 @@ replace https://graph.api.smartthings.com/ide/devices by https://graph-na02-usea
 
 Or use  https://consigliere-regional.api.smartthings.com/ to point to the right shard.
 
-- (e) <b>For the Nest Cam, if you want to get live streaming under ST, you'd need to share publicly and turn off the 2-step authentication for your cam (as the Nest-ST integration cannot support it) to make it work. </b>
-
-For more details, refer to 
-
-http://thingsthataresmart.wiki/index.php?title=MyNextCam#Issue_.2311:_I_cannot_get_live_stream_from_My_Nest_Cam
-
-
 
 LOGIN INFO REQUIRED FOR NEST ACCOUNT USERS (read-write modes under ST)
 ======================================================================
 
-Google recently introduced reCAPTCHA when logging to Nest. That means username and password cannot be used directly any more. Instead, you have to obtain user_id and access_token for your account by logging in manually. If you change your Nest account's password or 2FA settings, you will need to remove your old Nest devices (from all automation scenes/routines/smartapps) and redo the installation steps.
+Google recently introduced reCAPTCHA when logging to Nest. That means username and password cannot be used directly any more. 
 
-1. To do that, open developer tools in your Chrome browser, switch to the "Network" tab, log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=1578693398448. You can use the filter "session" to get the exact info needed.
+Instead, you have to obtain  `user_id ` and  `access_token` for your account by logging in manually. If you change your Nest account's password or 2FA settings, you will need to remove your old Nest devices (from all automation scenes/routines/smartapps) and redo the installation steps.
+
+1. To do that, open `developer tools` in your Chrome browser, switch to the `Network` tab, hit `preserve Logs`, log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=1578693398448. You can use the filter "session" to get the exact info needed.
 2. You will find `user_id` and `access_token`  in the response to the request.
-3. Copy over the Nest login information to the corresponding nest_& fields in App Settings
+3. Copy over the Nest login information to the corresponding nest* fields in App Settings
+
+See screenshots #h), i) and j) in the link below
+
+http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp
+
 
 
 
 LOGIN INFO REQUIRED FOR GOOGLE ACCOUNT USERS (read-only mode devices under ST)
 ==============================================================================
 
-The values of "issue_token" and "cookie" are specific to your Google Account. To get them, follow these steps (only needs to be done once, as long as you stay logged into your Google Account). If you change your Google account's password or 2FA settings, you will need to remove your old Nest devices (from all automation scenes/routines/smartapps) and redo the installation steps.
+Similar as the Nest account user, open `developer tools` in your Chrome browser,switch to the `Network` tab, hit `preserve Logs`.
+
+The values of `issue_token` and `cookie` are specific to your Google Account. To get them, follow these steps (only needs to be done once, as long as you stay logged into your Google Account). 
+
+Please note that if you change your Google account's password or 2FA settings, you will need to remove your old Nest devices (from all automation scenes/routines/smartapps) and redo the installation steps.
 
 1. Open a Chrome browser tab in Incognito Mode (or clear your cache).
 2. Open Developer Tools (View/Developer/Developer Tools).
@@ -91,6 +95,11 @@ The values of "issue_token" and "cookie" are specific to your Google Account. To
 10. In the Headers tab, under Request Headers, copy the entire `cookie` (beginning `OCAK=...` - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name)
 11. This is your "cookie" in the Settings section of the smartapp. In order to copy the whole cookie, you'd need to split it into different google_cookie_p* fields in the Settings section as the SmartThings platform doesn't support long text variables. If the text is too long, SmartThings will report an exception (500) when you try to save a too long cookie field. 
 12. Make sure that all your google_cookie_p* fields contain the whole cookie from Google.
+
+See screenshots #h), i) and j) in the link below
+
+http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp
+
 
 
 
@@ -185,12 +194,6 @@ b) Under the ST classic mobile app, under MyHome/Things (main menu at the bottom
 # 5) To populate the UI fields for your newly created device(s), press the "refresh" tile </b>
 
 If the fields are blank, you may have to hit the 'refresh' button on your newly created Next devices as the smartThings UI is not always responsive. 
-
-If you have to create many Nest devices under SmartThings, due to Nest's rate limiting issues, you may have to wait before seeing some values coming from Nest.
-
-Refer to 
-
-https://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.238:_There_is_a_groovyx.net.http.HttpResponseException:_Too_Many_Requests_exception_in_my_logs
 
 
 # 6) (Optional) Set device's preferences 

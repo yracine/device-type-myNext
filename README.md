@@ -120,7 +120,7 @@ c) Hit the "From Code" tab on the left corner
 
 d) Copy and paste the code from the corresponding txt file in the zip
 
-<b>The code has been sent to you via your paypal verified email address.</b>
+<b>Following your financial contribution at www.ecomatiqhomes.com/store, the code has been sent to you by Sellfy via your paypal verified email address.</b>
 
 e) Hit the create button at the bottom
 
@@ -137,7 +137,7 @@ c) Hit the "From Code" tab on the left corner
 
 d) Copy and paste the code from the corresponding txt file in the zip  
 
-<b>The code has been sent to you via your paypal verified email address.</b>
+<b>Following your financial contribution at www.ecomatiqhomes.com/store, the code has been sent to you by Sellfy via your paypal verified email address.</b>
 
 e) Hit the create button at the bottom
 

@@ -64,12 +64,14 @@ Google recently introduced reCAPTCHA when logging to Nest. That means username a
 Instead, you have to obtain  `user_id ` and  `access_token` for your account by logging in manually. If you change your Nest account's password or 2FA settings, you will need to remove your old Nest devices (from all automation scenes/routines/smartapps) and redo the installation steps.
 
 1. To do that, open `developer tools` in your Chrome browser, switch to the `Network` tab, hit `preserve Logs`, log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=1578693398448. You can use the filter "session" to get the exact info needed.
-2. You will find `user_id` and `access_token`  in the response to the request.
-3. Copy over the Nest login information to the corresponding nest* fields in App Settings
 
-See screenshots #h), i) and j) in the link below
+For some visual guidelines, refer to screenshots #h), i) and j) in the link below
 
 http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp
+
+
+2. You will find `user_id` and `access_token`  in the response to the request.
+3. Copy over the Nest login information to the corresponding nest* fields in App Settings
 
 
 
@@ -78,6 +80,11 @@ LOGIN INFO REQUIRED FOR GOOGLE ACCOUNT USERS (read-only mode devices under ST)
 ==============================================================================
 
 Similar as the Nest account user, open `developer tools` in your Chrome browser,switch to the `Network` tab, hit `preserve Logs`.
+For some visual guidelines, refer to screenshots #h), i) and j) in the link below
+
+http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp
+
+
 
 The values of `issue_token` and `cookie` are specific to your Google Account. To get them, follow these steps (only needs to be done once, as long as you stay logged into your Google Account). 
 
@@ -95,10 +102,6 @@ Please note that if you change your Google account's password or 2FA settings, y
 10. In the Headers tab, under Request Headers, copy the entire `cookie` (beginning `OCAK=...` - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name)
 11. This is your "cookie" in the Settings section of the smartapp. In order to copy the whole cookie, you'd need to split it into different google_cookie_p* fields in the Settings section as the SmartThings platform doesn't support long text variables. If the text is too long, SmartThings will report an exception (500) when you try to save a too long cookie field. 
 12. Make sure that all your google_cookie_p* fields contain the whole cookie from Google.
-
-See screenshots #h), i) and j) in the link below
-
-http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp
 
 
 

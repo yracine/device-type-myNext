@@ -27,7 +27,7 @@ PREREQUISITES
 
 - a) [Nest] Your Nest products fully operational and connected to Nest Home via the internet
 
-    Please note that all Nest thermostat devices are supported <b>except</b> the Nest thermostat E in the UK (with the heat link) and the Nest Secure Alarm.  Next Cams & Door Bells are not supported.
+    Please note that all Nest thermostat devices are supported <b>except</b> the Nest thermostat E in the UK (with the heat link) and the Nest Secure Alarm.  Next Cams & Door Bells are not supported.  Please take note that Google Account users will not be able to change the settings of their Nest devices under ST as the Nest Web APIs don't allow it.
 
 - b) [Nest] <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!).  
   

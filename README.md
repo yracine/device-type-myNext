@@ -31,14 +31,16 @@ PREREQUISITES
 
 - b) <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!).  
   
+- (c) The installation must proceed with the SmartThings classic mobile app, so you have to download it first from your appStore. This is required as any custom DTHs can only be instantiated or created via the ST classic mobile app </b>
 
-- (c) <b>Location set for your ST account under the ST classic mobile app </b>
+- (d) <b>Location set for your ST account under the ST classic mobile app </b>
+
 
 <b>Under the ST classic mobile app</b>, click on the 3-horizontal lines- "hamburger"- menu in the upper left corner, and then the "gear'" icon to review your location and save it.  You can refer to the SmartThings' documentation for more details.
 
 https://support.smartthings.com/hc/en-us/articles/205956850-How-to-edit-Location-settings
 
-- (d) <b>Determine your shard, please consult this thread: </b>
+- (e) <b>Determine your shard, please consult this thread: </b>
 
 
 https://community.smartthings.com/t/faq-how-to-find-out-what-shard-cloud-slice-ide-url-your-account-location-is-on/53923

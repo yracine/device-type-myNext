@@ -68,8 +68,8 @@ LOGIN INFO REQUIRED FOR NEST ACCOUNT USERS (read-write modes under ST)
 
 Google recently introduced reCAPTCHA when logging to Nest. That means username and password cannot be used directly any more. Instead, you have to obtain user_id and access_token for your account by logging in manually. If you change your Nest account's password or 2FA settings, you will need to remove your old Nest devices (from all automation scenes/routines/smartapps) and redo the installation steps.
 
-- To do that, open developer tools in your Chrome browser, switch to the "Network" tab, log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=1578693398448. 
-- You will find user_id and access_token in the response to the request.
+- To do that, open developer tools in your Chrome browser, switch to the "Network" tab, log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=1578693398448. You can use the filter "session" to get the exact info needed.
+- You will find <b>nest_user_id</b>" and <b>/nest_access_token</b>" in the response to the request.
 
 
 
@@ -84,9 +84,9 @@ The values of "issue_token" and "cookie" are specific to your Google Account. To
 - In the 'Filter' box, enter issueToken
 - Go to home.nest.com, and click 'Sign in with Google'. Log into your account.
 - One network call (beginning with iframerpc) will appear in the Dev Tools window. Click on it.
-- In the Headers tab, under General, copy the entire Request URL (beginning with https://accounts.google.com, ending with nest.com).   This is your "issue_token" in the App Settings section of the smartapp in the IDE.
+- In the Headers tab, under General, copy the entire Request URL (beginning with https://accounts.google.com, ending with nest.com).   This is your <b>"google_issue_token"</b> in the App Settings section of the smartapp in the IDE.
 - In the 'Filter' box, enter oauth2/iframe
-- Several network calls will appear in the Dev Tools window. Click on the last iframe call.
+- Several network/ calls will appear in the Dev Tools window. Click on the last iframe call.
 - In the Headers tab, under Request Headers, copy the entire cookie (beginning OCAK=... - include the whole string which is several lines long and has many field/value pairs - do not include the cookie: name). 
 - This is your "cookie" in the Settings section of the smartapp. In order to copy the whole cookie, you'd need to split it into different google_cookie_p* fields in the Settings section as the SmartThings platform doesn't support long text variables. If the text is too long, SmartThings will report an exception when you try to save a too long cookie field. 
 - Make sure that all your google_cookie_p* fields contain the whole cookie from Google.

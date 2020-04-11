@@ -60,8 +60,8 @@ replace https://graph.api.smartthings.com/ide/devices by https://graph-na02-usea
 Or use  https://consigliere-regional.api.smartthings.com/ to point to the right shard.
 
 
-LOGIN INFO REQUIRED FOR NEST ACCOUNT USERS (read-write modes under ST)
-======================================================================
+LOGIN INFO REQUIRED FOR NEST ACCOUNT USERS
+==========================================
 
 <b>Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in ST, and don't change your Nest account password or 2FA settings (and don't upgrade to a Google account).</b>
 

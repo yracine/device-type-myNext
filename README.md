@@ -61,6 +61,8 @@ Or use  https://consigliere-regional.api.smartthings.com/ to point to the right 
 LOGIN INFO REQUIRED FOR NEST ACCOUNT USERS (read-write modes under ST)
 ======================================================================
 
+<b>Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in ST, and don't change your Nest account password or 2FA settings (and don't upgrade to a Google account).</b>
+
 Google recently introduced reCAPTCHA when logging to Nest. That means username and password cannot be used directly any more. 
 
 Instead, you have to obtain  `user_id ` and  `access_token` for your account by logging in manually. If you change your Nest account's password or 2FA settings, you will need to remove your old Nest devices (from all automation scenes/routines/smartapps) and redo the installation steps.
@@ -80,6 +82,9 @@ http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_d
 
 LOGIN INFO REQUIRED FOR GOOGLE ACCOUNT USERS (read-only mode devices under ST)
 ==============================================================================
+
+
+<b>Once you log in to your Google account as described in the steps below, please keep the connection active to avoid any disconnect in ST, and don't change your Google account password or 2FA settings.</b>
 
 Similar as the Nest account user, open `developer tools` in your Chrome browser,switch to the `Network` tab, hit `preserve Logs`.
 For some visual guidelines, refer to screenshots #h), i) and j) in the link below

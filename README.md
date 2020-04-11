@@ -8,6 +8,8 @@ linkedIn profile:   www.linkedin.com/in/yracine
 
 Date:               2020-04-10
 
+Credit:             github @gboudreau for the initial Nest APIs discovery
+
 
 You can now download the code at 
 

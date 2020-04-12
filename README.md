@@ -80,6 +80,7 @@ http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_d
 2. [Chrome] You will find `user_id` and `access_token`  in the response to the request.
 3. [Chrome->ST] Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE)
 
+Do not copy the double quotes in the ST IDE variables. 
 
 
 

@@ -106,7 +106,7 @@ Please note that if you change your Google account's password or 2FA settings, y
 4. [Chrome] In the 'Filter' box, enter `issueToken`
 5. [Chrome] Go to `home.nest.com`, and click 'Sign in with Google'. Log into your account.
 6. [Chrome] One network call (beginning with `iframerpc`) will appear in the Dev Tools window. Click on it.
-7. [Chrome] In the Headers tab, under General, copy the entire `Request URL` (beginning with `https://accounts.google.com`, ending with `nest.com`). This is your `"google_issu [Chrome] e_token"` in App settings.
+7. [Chrome] In the Headers tab, under General, copy the entire `Request URL` (beginning with `https://accounts.google.com`, ending with `nest.com`). This is your `"google_issue_token"` in App settings.
 8. [Chrome] In the 'Filter' box, enter `oauth2/iframe`
 9. [Chrome] Several network calls [Chrome->ST] will [Chrome->ST] appear in the Dev Tools window. Click on the last `iframe` call.
 10.[Chrome] In the Headers tab, under Request Headers, copy the entire `cookie` (beginning `OCAK=...` - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name)

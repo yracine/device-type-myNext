@@ -26,6 +26,8 @@ Setup time: about 15-25 minutes depending on your ST skills.
 
 PREREQUISITES
 ==============
+Some technical skills are required to setup your Nest devices under ST as the Nest Web APIs used
+are not the "official" ones and don't have an oAuth flow.
 
 - a) [Nest] Your Nest products fully operational and connected to Nest Home via the internet
 
@@ -96,8 +98,8 @@ If you lose your auth tokens, then you'd need to redo the steps above and copy o
 You don't need to re-install the devices, just reset the Nest connection.
 
 
-LOGIN INFO REQUIRED FOR GOOGLE ACCOUNT USERS 
-============================================
+LOGIN INFO REQUIRED FOR GOOGLE ACCOUNT USERS (MIGRATED NEST USERS)
+===================================================================
 
 
 <b>Notes:</b>

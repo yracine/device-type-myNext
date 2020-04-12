@@ -27,7 +27,7 @@ Setup time: about 15-25 minutes depending on your ST skills.
 PREREQUISITES
 ==============
 Some technical skills are required to setup your Nest devices under ST as the Nest Web APIs used
-are not the "official" ones and don't have an oAuth flow.
+are not the "official" ones and don't have an oAuth flow (see LOGIN INFO For NEst or Google Account users below).
 
 - a) [Nest] Your Nest products fully operational and connected to Nest Home via the internet
 

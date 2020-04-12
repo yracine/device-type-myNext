@@ -74,7 +74,7 @@ Instead, you have to obtain  `user_id ` and  `access_token` for your account by 
 
 1. [Chrome] To do that, open `developer tools` in your Chrome browser, switch to the `Network` tab, hit `preserve Logs`, log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=157XXXXXX. You can use the filter "session" to get the exact info needed.
 
-For some visual guidelines, refer to screenshots #h), i) and j) in the link below
+For some visual guidelines, refer to screenshots in the link below
 
 https://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2314:_My_Next_devices_are_not_updating_or_my_auth_tokens_are_lost
 
@@ -114,7 +114,7 @@ You don't need to re-install the devices, just reset the Nest connection.
 <b>Steps:</b>
 
 Similar as the Nest account user, open `developer tools` in your Chrome browser,switch to the `Network` tab, hit `preserve Logs`.
-For some visual guidelines, refer to screenshots #h), i) and j) in the link below
+For some visual guidelines, refer to screenshots in the link below
 
 https://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2314:_My_Next_devices_are_not_updating_or_my_auth_tokens_are_lost
 

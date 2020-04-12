@@ -29,9 +29,8 @@ PREREQUISITES
 
 - a) [Nest] Your Nest products fully operational and connected to Nest Home via the internet
 
-    Please note that all Nest thermostat devices are supported <b>except</b> the Nest thermostat E in the UK (with the heat link) and the Nest Secure Alarm.  Next Cams & Door Bells are not supported.  
+    Please note that all Nest thermostat devices are supported <b>except</b> the Nest thermostat E in the UK (with the heat link) and the Nest Secure Alarm.  <b>Next Cams & Door Bells are not supported. </b>  
     
-<b> After some testing, due to the limitations of the Nest Web APIs, the Nest users who have migrated to a Google account will not be able to user the code properly as the code will work only for a couple of hours and need to be re-authenticated.</b>
 
 - b) [Nest] <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!).  
   
@@ -84,8 +83,8 @@ http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_d
 
 
 
-LOGIN INFO REQUIRED FOR GOOGLE ACCOUNT USERS (severe time limations due to Nest Web APIs)
-==========================================================================================
+LOGIN INFO REQUIRED FOR GOOGLE ACCOUNT USERS 
+============================================
 
 
 <b>Once you log in to your Google account as described in the steps below, please keep the connection active to avoid any disconnect in ST, and don't change your Google account password or 2FA settings.</b>

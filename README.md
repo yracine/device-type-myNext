@@ -94,7 +94,13 @@ LOGIN INFO REQUIRED FOR GOOGLE ACCOUNT USERS
 ============================================
 
 
-<b>Once you log in to your Google account as described in the steps below, please keep the connection active to avoid any disconnect in ST (always keep your home.nest.com window open), and don't change your Google account password or 2FA settings.</b>
+<b>Notes:</b>
+
+<b>Once you log in to your Google account as described in the steps below, please keep the connection active to avoid any disconnect in ST (always keep your home.nest.com window open), and don't change your Google account password or 2FA settings.</b>  
+
+If you lose your auth tokens, then you'd need to redo the steps below and copy over the new google cookie and issue_token_url back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the ST classic mobile app by pressing "Next" till "Save").
+
+<b>Steps:</b>
 
 Similar as the Nest account user, open `developer tools` in your Chrome browser,switch to the `Network` tab, hit `preserve Logs`.
 For some visual guidelines, refer to screenshots #h), i) and j) in the link below

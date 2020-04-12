@@ -57,9 +57,12 @@ As an example, in North America, </b>
 
 replace https://graph.api.smartthings.com/ide/devices by https://graph-na02-useast1.api.smartthings.com
 
-
 Or use  https://consigliere-regional.api.smartthings.com/ to point to the right shard.
 
+FYI,the login info for Nest account users looks like the following:
+
+nest_user_id=4783742
+nest_access_token=b.4783742.xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 LOGIN INFO REQUIRED FOR NEST ACCOUNT Users (Not migrated to a Google account) 
 =============================================================================
@@ -74,7 +77,10 @@ Instead, you have to obtain  `user_id ` and  `access_token` for your account by 
 
 For some visual guidelines, refer to screenshots #h), i) and j) in the link below
 
+
 http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp
+
+
 
 
 2. [Chrome] You will find `user_id` and `access_token`  in the response to the request.

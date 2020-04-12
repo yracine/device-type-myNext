@@ -91,7 +91,7 @@ Do not copy the double quotes in the ST IDE variables.
 
 <b>Notes:</b>
 
-If you lose your auth tokens, then you'd need to redo the steps below and copy over the new nest access_token back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the ST classic mobile app by pressing "Next" till "Save").
+If you lose your auth tokens, then you'd need to redo the steps above and copy over the new nest access_token back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the ST classic mobile app by pressing "Next" till "Save").
 
 You don't need to re-install the devices, just reset the Nest connection.
 

@@ -89,6 +89,12 @@ http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_d
 Do not copy the double quotes in the ST IDE variables. 
 
 
+<b>Notes:</b>
+
+If you lose your auth tokens, then you'd need to redo the steps below and copy over the new nest access_token back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the ST classic mobile app by pressing "Next" till "Save").
+
+You don't need to re-install the devices, just reset the Nest connection.
+
 
 LOGIN INFO REQUIRED FOR GOOGLE ACCOUNT USERS 
 ============================================
@@ -99,6 +105,8 @@ LOGIN INFO REQUIRED FOR GOOGLE ACCOUNT USERS
 <b>Once you log in to your Google account as described in the steps below, please keep the connection active to avoid any disconnect in ST (always keep your home.nest.com window open), and don't change your Google account password or 2FA settings.</b>  
 
 If you lose your auth tokens, then you'd need to redo the steps below and copy over the new google cookie and issue_token_url back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the ST classic mobile app by pressing "Next" till "Save").
+
+You don't need to re-install the devices, just reset the Nest connection.
 
 <b>Steps:</b>
 

@@ -87,6 +87,7 @@ http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_d
 
 2. [Chrome] You will find `user_id` and `access_token`  in the response to the request.
 3. [Chrome->ST] Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE)
+4. [ST IDE] After copying and pasting the login info, press "update" at the bottom of the ST IDE to save your variables.
 
 Do not copy the double quotes in the ST IDE variables. 
 
@@ -135,7 +136,7 @@ Please note that if you change your Google account's password or 2FA settings, y
 10.[Chrome] In the Headers tab, under Request Headers, copy the entire `cookie` (beginning `OCAK=...` - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name)
 11. [Chrome->ST IDE] This is your "cookie" in the Settings section of the smartapp (ST IDE). In order to copy the whole cookie, you'd need to split it into different google_cookie_p* fields in the Settings section as the SmartThings platform doesn't support long text variables. If the text is too long, SmartThings will report an exception (500) when you try to save a too long cookie field. 
 12. [Chrome->ST IDE]  Make sure that all your google_cookie_p* fields contain the whole cookie from Google.
-
+13. [ST IDE] After copying and pasting the login info, press "update" at the bottom of the ST IDE to save your variables.
 
 
 

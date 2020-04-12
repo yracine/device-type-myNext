@@ -79,11 +79,7 @@ Instead, you have to obtain  `user_id ` and  `access_token` for your account by 
 
 For some visual guidelines, refer to screenshots #h), i) and j) in the link below
 
-
-http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp
-
-
-
+https://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2314:_My_Next_devices_are_not_updating_or_my_auth_tokens_are_lost
 
 2. [Chrome] You will find `user_id` and `access_token`  in the response to the request.
 3. [Chrome->ST] Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE)
@@ -116,9 +112,7 @@ You don't need to re-install the devices, just reset the Nest connection.
 Similar as the Nest account user, open `developer tools` in your Chrome browser,switch to the `Network` tab, hit `preserve Logs`.
 For some visual guidelines, refer to screenshots #h), i) and j) in the link below
 
-http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp
-
-
+https://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2314:_My_Next_devices_are_not_updating_or_my_auth_tokens_are_lost
 
 The values of `issue_token` and `cookie` are specific to your Google Account. To get them, follow these steps (only needs to be done once, as long as you stay logged into your Google Account). 
 

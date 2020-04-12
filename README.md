@@ -61,10 +61,7 @@ replace https://graph.api.smartthings.com/ide/devices by https://graph-na02-usea
 
 Or use  https://consigliere-regional.api.smartthings.com/ to point to the right shard.
 
-FYI,the login info for Nest account users looks like the following:
 
-nest_user_id=4783742
-nest_access_token=b.4783742.xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 LOGIN INFO REQUIRED FOR NEST ACCOUNT Users (Not migrated to a Google account) 
 =============================================================================
@@ -83,9 +80,16 @@ https://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2314:_M
 
 2. [Chrome] You will find `user_id` and `access_token`  in the response to the request.
 3. [Chrome->ST] Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE)
+
+FYI,the login info for Nest account users looks like the following:
+
+nest_user_id=4783742
+nest_access_token=b.4783742.xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 4. [ST IDE] After copying and pasting the login info, press "update" at the bottom of the ST IDE to save your variables.
 
 Do not copy the double quotes in the ST IDE variables. 
+
 
 
 <b>Notes:</b>

@@ -94,7 +94,7 @@ LOGIN INFO REQUIRED FOR GOOGLE ACCOUNT USERS
 ============================================
 
 
-<b>Once you log in to your Google account as described in the steps below, please keep the connection active to avoid any disconnect in ST, and don't change your Google account password or 2FA settings.</b>
+<b>Once you log in to your Google account as described in the steps below, please keep the connection active to avoid any disconnect in ST (always keep your home.nest.com window open), and don't change your Google account password or 2FA settings.</b>
 
 Similar as the Nest account user, open `developer tools` in your Chrome browser,switch to the `Network` tab, hit `preserve Logs`.
 For some visual guidelines, refer to screenshots #h), i) and j) in the link below

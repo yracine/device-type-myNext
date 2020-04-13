@@ -129,17 +129,18 @@ The values of `issue_token` and `cookie` are specific to your Google Account. To
 
 1. [Chrome] Open a Chrome browser tab in Incognito Mode (or clear your cache).
 2. [Chrome] Open Developer Tools (View/Developer/Developer Tools).
-3. [Chrome] Click on 'Network' tab. Make sure 'Preserve Log' is checked.
-4. [Chrome] In the 'Filter' box, enter `issueToken`
-5. [Chrome] Go to `home.nest.com`, and click 'Sign in with Google'. Log into your account.
-6. [Chrome] One network call (beginning with `iframerpc`) will appear in the Dev Tools window. Click on it.
-7. [Chrome] In the Headers tab, under General, copy the entire `Request URL` (beginning with `https://accounts.google.com`, ending with `nest.com`). This is your `"google_issue_token"` in App settings.
-8. [Chrome] In the 'Filter' box, enter `oauth2/iframe`
-9. [Chrome] Several network calls [Chrome->ST] will [Chrome->ST] appear in the Dev Tools window. Click on the last `iframe` call.
-10.[Chrome] In the Headers tab, under Request Headers, copy the entire `cookie` (usually it starts with `OCAK=...` - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name). You can copy it in your preferred editor to split it in multiple fields of similar length.
-11. [Chrome->ST IDE] This is your "cookie" in the Settings section of the smartapp (ST IDE). In order to copy the whole cookie, you'd need to split it into different google_cookie_p* fields in the Settings section as the SmartThings platform doesn't support long text variables. If the text is too long, SmartThings will report an exception (500) when you try to save a too long cookie field. 
-12. [Chrome->ST IDE]  Make sure that all your google_cookie_p* fields contain the whole cookie from Google.
-13. [ST IDE] After copying and pasting the login info, press "update" at the bottom of the ST IDE to save your variables.
+3. [Chrome] Click on 'Network' tab. 
+4. [Chrome] Make sure 'Preserve Log' is checked.
+5. [Chrome] In the 'Filter' box, enter `issueToken`
+6. [Chrome] Go to `home.nest.com`, and click 'Sign in with Google'. Log into your account.
+7. [Chrome] One network call (beginning with `iframerpc`) will appear in the Dev Tools window. Click on it.
+8. [Chrome] In the Headers tab, under General, copy the entire `Request URL` (beginning with `https://accounts.google.com`, ending with `nest.com`). This is your `"google_issue_token"` in App settings.
+9. [Chrome] In the 'Filter' box, enter `oauth2/iframe`
+10. [Chrome] Several network calls [Chrome->ST] will [Chrome->ST] appear in the Dev Tools window. Click on the last `iframe` call.
+11.[Chrome] In the Headers tab, under Request Headers, copy the entire `cookie` (usually it starts with `OCAK=...` - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name). You can copy it in your preferred editor to split it in multiple fields of similar length.
+12. [Chrome->ST IDE] This is your "cookie" in the Settings section of the smartapp (ST IDE). In order to copy the whole cookie, you'd need to split it into different google_cookie_p* fields in the Settings section as the SmartThings platform doesn't support long text variables. If the text is too long, SmartThings will report an exception (500) when you try to save a too long cookie field. 
+13. [Chrome->ST IDE]  Make sure that all your google_cookie_p* fields contain the whole cookie from Google.
+14. [ST IDE] After copying and pasting the login info, press "update" at the bottom of the ST IDE to save your variables.
 
 
 

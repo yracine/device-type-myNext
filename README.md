@@ -74,11 +74,11 @@ Instead, you have to obtain  `user_id ` and  `access_token` for your account by 
 
 1. [Chrome] To do that, open `developer tools` in your Chrome browser, switch to the `Network` tab, 
 
-2. Hit `preserve Logs` in the Network tab 
+2. [Chrome] Hit `preserve Logs` in the Network tab 
 
 3. [Chrome] Log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=157XXXXXX. 
 
-4. You can use the filter "session" to get the exact info needed.
+4. [Chrome] You can use the filter "session" to get the exact info needed.
 
 For some visual guidelines, refer to screenshots in the link below
 

@@ -76,6 +76,9 @@ For some visual guidelines, refer to screenshots in the link below
 
 https://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2314:_My_Next_devices_are_not_updating_or_my_auth_tokens_are_lost
 
+<b>Steps for Nest users who have NOT migrated to a Google account:</b>
+
+
 1. [Chrome] To do that, open `developer tools` in your Chrome browser, switch to the `Network` tab, 
 
 2. [Chrome] Hit `preserve Logs` in the Network tab 
@@ -118,7 +121,7 @@ If you lose your auth tokens, then you'd need to redo the steps below and copy o
 
 You don't need to re-install the devices, just reset the Nest connection.
 
-<b>Steps:</b>
+<b>Steps for users who have migrated to a Google account:</b>
 
 Similar as the Nest account user, open `developer tools` in your Chrome browser,switch to the `Network` tab, hit `preserve Logs`.
 For some visual guidelines, refer to screenshots in the link below

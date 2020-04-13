@@ -72,6 +72,10 @@ Google recently introduced reCAPTCHA when logging to Nest. That means username a
 
 Instead, you have to obtain  `user_id ` and  `access_token` for your account by logging in manually. 
 
+For some visual guidelines, refer to screenshots in the link below
+
+https://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2314:_My_Next_devices_are_not_updating_or_my_auth_tokens_are_lost
+
 1. [Chrome] To do that, open `developer tools` in your Chrome browser, switch to the `Network` tab, 
 
 2. [Chrome] Hit `preserve Logs` in the Network tab 
@@ -80,11 +84,8 @@ Instead, you have to obtain  `user_id ` and  `access_token` for your account by 
 
 4. [Chrome] You can use the filter "session" to get the exact info needed.
 
-For some visual guidelines, refer to screenshots in the link below
-
-https://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2314:_My_Next_devices_are_not_updating_or_my_auth_tokens_are_lost
-
 5. [Chrome] You will find `user_id` and `access_token`  in the response to the request.
+
 6. [Chrome->ST] Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE)
 
 FYI,the login info for Nest account users looks like the following:

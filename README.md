@@ -72,21 +72,27 @@ Google recently introduced reCAPTCHA when logging to Nest. That means username a
 
 Instead, you have to obtain  `user_id ` and  `access_token` for your account by logging in manually. 
 
-1. [Chrome] To do that, open `developer tools` in your Chrome browser, switch to the `Network` tab, hit `preserve Logs`, log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=157XXXXXX. You can use the filter "session" to get the exact info needed.
+1. [Chrome] To do that, open `developer tools` in your Chrome browser, switch to the `Network` tab, 
+
+2. Hit `preserve Logs` in the Network tab 
+
+3. [Chrome] Log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=157XXXXXX. 
+
+4. You can use the filter "session" to get the exact info needed.
 
 For some visual guidelines, refer to screenshots in the link below
 
 https://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2314:_My_Next_devices_are_not_updating_or_my_auth_tokens_are_lost
 
-2. [Chrome] You will find `user_id` and `access_token`  in the response to the request.
-3. [Chrome->ST] Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE)
+5. [Chrome] You will find `user_id` and `access_token`  in the response to the request.
+6. [Chrome->ST] Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE)
 
 FYI,the login info for Nest account users looks like the following:
 
 nest_user_id=4783742
 nest_access_token=b.4783742.xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-4. [ST IDE] After copying and pasting the login info, press "update" at the bottom of the ST IDE to save your variables.
+7. [ST IDE] After copying and pasting the login info, press "update" at the bottom of the ST IDE to save your variables.
 
 Do not copy the double quotes in the ST IDE variables. 
 

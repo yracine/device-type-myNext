@@ -35,7 +35,7 @@ are not the "official" ones and don't have an oAuth flow (see LOGIN INFO For NEs
     
 -  b) [Nest] <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!)
     
-- (c) [ST CLASSIC APP] The installation must proceed with the SmartThings classic mobile app, so you have to download it first from your appStore. This is required as any custom DTHs can only be instantiated or created via the ST classic mobile app </b>
+-(c) [ST CLASSIC APP] The installation must proceed with the SmartThings classic mobile app, so you have to download it first from your appStore. This is required as any custom DTHs can only be instantiated or created via the ST classic mobile app </b>
 
 - (d) [ST CLASSIC APP] <b>Location set for your ST account under the ST classic mobile app </b>
 

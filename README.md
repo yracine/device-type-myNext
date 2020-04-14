@@ -33,17 +33,17 @@ are not the "official" ones and don't have an oAuth flow (see LOGIN INFO For NEs
 
     Please note that all Nest thermostat devices are supported <b>except</b> the Nest thermostat E in the UK (with the heat link).       <b>Next Cams & Door Bells, and the Nest Secure Alarm are not supported. </b>  
     
--  b) [Nest] <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!)
-    
--(c) [ST CLASSIC APP] The installation must proceed with the SmartThings classic mobile app, so you have to download it first from your appStore. This is required as any custom DTHs can only be instantiated or created via the ST classic mobile app </b>
+- b) [Nest] <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!)
+     
+- c) [ST CLASSIC APP] The installation must proceed with the SmartThings classic mobile app, so you have to download it first from your appStore. This is required as any custom DTHs can only be instantiated or created via the ST classic mobile app </b>
 
-- (d) [ST CLASSIC APP] <b>Location set for your ST account under the ST classic mobile app </b>
+- d) [ST CLASSIC APP] <b>Location set for your ST account under the ST classic mobile app </b>
 
 <b>Under the ST classic mobile app</b>, click on the 3-horizontal lines- "hamburger"- menu in the upper left corner, and then the "gear'" icon to review your location and save it.  You can refer to the SmartThings' documentation for more details.
 
 https://support.smartthings.com/hc/en-us/articles/205956850-How-to-edit-Location-settings
 
-- (e) [ST IDE] <b>Determine your shard, please consult this thread: </b>
+- e) [ST IDE] <b>Determine your shard, please consult this thread: </b>
 
 
 https://community.smartthings.com/t/faq-how-to-find-out-what-shard-cloud-slice-ide-url-your-account-location-is-on/53923

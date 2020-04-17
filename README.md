@@ -184,7 +184,7 @@ f) [ST IDE] <b>Make sure that "enable OAuth" in Smartapp is active </b>
 * Hit "Update" at the bottom
  back to the code window, and hit the "publish/for me" button at the top right corner
 
-h) [ST IDE] Click on App Settings and copy the required login info whether you're still a Nest account user or a Google Account user.
+h) [ST IDE] Click on App Settings and copy the required login info (Google or Nest account) whether you're still a Nest account user or a Google Account user.
 
 i) [ST IDE] Click on the update button at the bottom to save your login information from Nest/Google.
 

@@ -64,7 +64,7 @@ Or use  https://consigliere-regional.api.smartthings.com/ to point to the right 
 LOGIN INFO REQUIRED FOR NEST ACCOUNT Users (Not migrated to a Google account) 
 =============================================================================
 
-* <b>Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in ST, and don't change your Nest account password or 2FA settings (and don't upgrade to a Google account).</b>
+* <b> Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in ST (i.e., do not log off, but you can close your browser and even turn off your desktop/mobile), and don't change your Nest account password or 2FA settings.</b>
 
 * Google recently introduced reCAPTCHA when logging to Nest. That means username and password cannot be used directly any more. 
 Instead, you have to obtain  `user_id ` and  `access_token` for your account by logging in manually. 
@@ -116,7 +116,7 @@ ______________
 <b>Notes:</b>
 ______________
 
-* <b>Once you log in to your Google account as described in the steps below, please keep the connection active to avoid any disconnect in ST (always keep your home.nest.com window open), and don't change your Google account password or 2FA settings.</b>  
+* <b> Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in ST (i.e., do not log off, but you can close your browser and even turn off your desktop/mobile), and don't change your Nest account password or 2FA settings.</b>
 
 * If you lose your auth tokens, then you'd need to redo the steps below and copy over the new google cookie and issue_token_url back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the ST classic mobile app by pressing "Next" till "Save").
 

@@ -73,6 +73,7 @@ Instead, you have to obtain  `user_id ` and  `access_token` for your account by 
 
 https://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2314:_My_Next_devices_are_not_updating_or_my_auth_tokens_are_lost
 
+________________________________________________________________________
 <b>7 Steps for Nest users who have NOT migrated to a Google account:</b>
 ________________________________________________________________________
 
@@ -97,7 +98,7 @@ nest_access_token=b.4783742.xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 Do not copy the double quotes in the ST IDE variables. 
 
-
+______________
 <b>Notes:</b>
 ______________
 
@@ -110,6 +111,7 @@ LOGIN INFO REQUIRED FOR GOOGLE ACCOUNT USERS (MIGRATED NEST USERS)
 ===================================================================
 
 
+______________
 <b>Notes:</b>
 ______________
 
@@ -119,6 +121,7 @@ ______________
 
 * You don't need to re-install the devices, just reset the Nest connection.
 
+______________________________________________________________
 <b>14 Steps for users who have migrated to a Google account:</b>
 ______________________________________________________________
 

@@ -103,7 +103,7 @@ ______________
 
 * If you lose your auth tokens, then you'd need to redo the steps above and copy over the new nest access_token back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the ST classic mobile app by pressing "Next" till "Save").
 
-You don't need to re-install the devices, just reset the Nest connection.
+* You don't need to re-install the devices, just reset the Nest connection.
 
 
 LOGIN INFO REQUIRED FOR GOOGLE ACCOUNT USERS (MIGRATED NEST USERS)
@@ -117,7 +117,7 @@ ______________
 
 * If you lose your auth tokens, then you'd need to redo the steps below and copy over the new google cookie and issue_token_url back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the ST classic mobile app by pressing "Next" till "Save").
 
-You don't need to re-install the devices, just reset the Nest connection.
+* You don't need to re-install the devices, just reset the Nest connection.
 
 <b>14 Steps for users who have migrated to a Google account:</b>
 ______________________________________________________________

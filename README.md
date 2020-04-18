@@ -86,7 +86,7 @@ https://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2314:_M
 
 5. [Chrome] You will find `user_id` and `access_token`  in the response to the request.
 
-6. [Chrome->ST] Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE), see step 2g) below at https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
+6. [Chrome->ST] Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE) for MyNextManagerV2, refer to step 2g) below at https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
 
 FYI,the login info for Nest account users looks like the following:
 
@@ -138,7 +138,7 @@ The values of `issue_token` and `cookie` are specific to your Google Account. To
 9. [Chrome] In the 'Filter' box, enter `oauth2/iframe`
 10. [Chrome] Several network calls will appear in the Dev Tools window. Click on the last `iframe` call.
 11.[Chrome] In the Headers tab, under Request Headers, copy the entire `cookie` (usually it starts with `OCAK=...` or or h `SID=...` - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name). You can copy it in your preferred editor to split it in multiple fields of similar length.
-12. [Chrome->ST IDE] This is your "cookie" in the Settings section of the smartapp (ST IDE). In order to copy the whole cookie, you'd need to split it into different google_cookie_p* fields in the Settings section as the SmartThings platform doesn't support long text variables. If the text is too long, SmartThings will report an exception (500) when you try to save a too long cookie field.  See step 2g) below at https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
+12. [Chrome->ST IDE] This is your "cookie" in the Settings section of the MyNextManagerV2 smartapp in the ST IDE. In order to copy the whole cookie, you'd need to split it into different google_cookie_p* fields in the Settings section as the SmartThings platform doesn't support long text variables. If the text is too long, SmartThings will report an exception (500) when you try to save a too long cookie field.  Refer to step 2g) below at https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
 13. [Chrome->ST IDE]  Make sure that all your google_cookie_p* fields contain the whole cookie from Google.
 14. [ST IDE] After copying and pasting the login info, press "update" at the bottom of the ST IDE to save your variables.
 

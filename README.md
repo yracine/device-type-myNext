@@ -263,7 +263,7 @@ You only need to edit the following parameters
 P.S. Don't enter any values for the internal ID or the structure ID as those values are provided by the Service Manager during the authentification flow
 
 
-# 7) Use some of my smartapps (optional) - For Nest account users.
+# 7) Use some of my smartapps (optional) - For all Nest users
 
 Some complimentary smartapps at my github, refer to:
 

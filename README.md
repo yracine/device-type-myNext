@@ -37,6 +37,8 @@ are not the "official" ones and don't have an oAuth flow (see LOGIN INFO For NEs
     
 - c) [ST CLASSIC APP] The installation must proceed with the SmartThings classic mobile app, so you have to download it first from your appStore. This is required as any custom DTHs can only be instantiated or created via the ST classic mobile app </b>
 
+However, after creating the devices under SmartThings, you can return to the new Samsung Connect app if you prefer as both apps (ST classic, STSC) can run in parallel without any issues.
+
 - d) [ST CLASSIC APP] <b>Location set for your ST account under the ST classic mobile app </b>
 
 <b>Under the ST classic mobile app</b>, click on the 3-horizontal lines- "hamburger"- menu in the upper left corner, and then the "gear'" icon to review your location and save it.  You can refer to the SmartThings' documentation for more details.

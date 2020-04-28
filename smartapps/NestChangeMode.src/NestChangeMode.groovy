@@ -4,6 +4,12 @@
  *  Copyright 2018 Yves Racine
  *  LinkedIn profile: ca.linkedin.com/pub/yves-racine-m-sc-a/0/406/4b/
  *
+/**
+ *  NestChangeMode
+ *
+ *  Copyright 2018 Yves Racine
+ *  LinkedIn profile: ca.linkedin.com/pub/yves-racine-m-sc-a/0/406/4b/
+ *
  *  Developer retains all right, title, copyright, and interest, including all copyright, patent rights, trade secret 
  *  in the Background technology. May be subject to consulting fees under the Agreement between the Developer and the Customer. 
  *  Developer grants a non exclusive perpetual license to use the Background technology in the Software developed for and delivered 
@@ -84,7 +90,7 @@ def selectProgram() {
 		section("Select Nest Mode") {
 			input "givenClimate", "enum", title: "Change to this mode at Nest (Eco, Home)?", options: NestPrograms, required: true
 		}
-		section("When SmartThings' ST location (hello) mode changes to ('Eco', 'Home')[optional]") {
+		section("When SmartThings' ST location (hello) mode changes to ('Away', 'Home')[optional]") {
 			input "newMode", "enum", options: enumModes, multiple:true, required: false
 		}
 		section("Enter a delay in minutes [optional, default=immediately after ST hello mode change] ") {

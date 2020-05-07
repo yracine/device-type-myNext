@@ -1,7 +1,7 @@
 /**
  *  WindowOrDoorOpen
  *
- *  Copyright 2014 Yves Racine 
+ *  Copyright 2014-2020 Yves Racine 
  *  LinkedIn profile: ca.linkedin.com/pub/yves-racine-m-sc-a/0/406/4b/
  *
  *  Developer retains all right, title, copyright, and interest, including all copyright, patent rights, trade secret 
@@ -76,6 +76,10 @@ preferences {
 def installed() {
 	log.debug "Installed with settings: ${settings}"
 
+	state?.status=[]    
+	state?.count=[]    
+	state?.lastThermostatMode = null
+	state.lastThermostatMode = ""
 	initialize()
 }
 
@@ -83,17 +87,13 @@ def updated() {
 	log.debug "Updated with settings: ${settings}"
 
 	unsubscribe()
-	unschedule()    
+//	unschedule()    
 	initialize()
 }
 
 def initialize() {	
 	def MAX_CONTACT=30
-	state?.lastThermostatMode = null
 	// subscribe to all contact sensors to check for open/close events
-	state?.status=[]    
-	state?.count=[]    
-	state.lastThermostatMode = ""
 	if (holdSwitch) {
 		subscribe(holdSwitch, "switch.off", offHandler)
 		subscribe(holdSwitch, "switch.on", onHandler)

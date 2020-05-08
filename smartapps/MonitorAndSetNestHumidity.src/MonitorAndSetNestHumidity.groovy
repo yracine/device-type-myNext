@@ -735,7 +735,7 @@ def setHumidityLevel() {
 			log.trace("Indoor humidity is ${nestHumidity}%, but outdoor humidity (${outdoorHumidity}%) is too high to dehumidify")
 			send("indoor humidity is ${nestHumidity}%, but outdoor humidity ${outdoorHumidity}% is too high to dehumidify, using $dehumidifySwitches switch(es) only", askAlexaFlag)
 		}
-		nest.setThermostatSettings("", ['auto_dehum_enabled:': false, 'target_humidity':target_humidity, "target_humidity_enabled":true])
+		nest.setThermostatSettings("", ['auto_dehum_enabled:': false,  "target_humidity_enabled":false])
 
 		if (settings.useFanWhenHumidityIsHigh) {
 			nest.fanOn() // set fan on
@@ -773,7 +773,7 @@ def setHumidityLevel() {
 			send("all off, humidity level (${nestHumidity}%) within range", askAlexaFlag)
 		}
 		if (settings.useFanWhenHumidityIsHigh) {
-			nest.fanOff() // set fan to auto
+			nest.fanOff() // set fan to off
 		}
 		if (dehumidifySwitches) {
 			if (detailedNotif) {
@@ -791,10 +791,10 @@ def setHumidityLevel() {
 		humidifySwitches.off()
 		if (settings.useFanWithHumidifierSwitches) {
 			if (detailedNotif) {
-				log.trace("Indoor humidity is ${nestHumidity}% and close to target humidity, setting the HVAC's fan to auto")
-				send("Indoor humidity is ${nestHumidity}% and close to target humidity, setting the HVAC's fan to auto")
+				log.trace("Indoor humidity is ${nestHumidity}% and close to target humidity, setting the HVAC's fan to off")
+				send("Indoor humidity is ${nestHumidity}% and close to target humidity, setting the HVAC's fan to off")
 			}
-			nest.fanOff() // set fan to auto
+			nest.fanOff() // set fan to off
 		}
 	
 	}

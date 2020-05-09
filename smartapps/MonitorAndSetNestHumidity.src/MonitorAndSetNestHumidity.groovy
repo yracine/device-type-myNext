@@ -14,7 +14,7 @@
  *  Software Distribution is restricted and shall be done only with Developer's written approval.
  *
  *
- *  Monitor and set Humidity with Nest Thermostat(s):
+ *  Monitor and set Humidity with Nest Thermostat:
  *      Monitor humidity level indoor vs. outdoor at a regular interval (in minutes) and 
  *  N.B. Requires MyNextTstatV2 device available at 
  *          http://www.ecomatiqhomes.com/store
@@ -30,7 +30,7 @@ definition(
 )
 
 def get_APP_VERSION() {
-	return "1.0.1"
+	return "1.0.2"
 }
 
 preferences {
@@ -66,8 +66,8 @@ def dashboardPage() {
 				def operatingState = nest?.currentThermostatOperatingState
 				indoorHumidity = nest.currentHumidity
 				indoorTemp = nest.currentTemperature
-				def hasDehumidifier = (nest.currentHasDehumidifier) ? nest.currentHasDehumidifier : 'false'
-				def hasHumidifier = (nest.currentHasHumidifier) ? nest.currentHasHumidifier : 'false'
+				def hasDehumidifier = (nest?.currentValue("has_dehumidifier")) ? nest.currentValue("has_dehumidifier") : 'false'
+				def hasHumidifier = (nest?.currentValue("has_humidifier")) ? nest.currentValue("has_humidifier") : 'false'
 				String useFanWhenHumidityIsHighString = (settings.useFanWhenHumidityIsHigh) ? 'true' : 'false'
 				String useFanWithHumidifierSwitchesString = (settings.useFanWithHumidifierSwitches) ? 'true' : 'false'
 				String dehumidifyWithACString=(settings.dehumidifyWithACFlag)? 'true': 'false'                
@@ -528,8 +528,8 @@ def setHumidityLevel() {
 	def nestHumidity = nest.currentHumidity
 	def indoorHumidity = 0
 	def indoorTemp = nest.currentTemperature
-	def hasDehumidifier = (nest.currentHasDehumidifier) ? nest.currentHasDehumidifier : 'false'
-	def hasHumidifier = (nest.currentHasHumidifier) ? nest.currentHasHumidifier : 'false'
+	def hasDehumidifier = (nest?.currentValue("has_dehumidifier")) ? nest.currentValue("has_dehumidifier") : 'false'
+	def hasHumidifier = (nest?.currentValue("has_humidifier")) ? nest.currentValue("has_humidifier") : 'false'
 	def outdoorHumidity
 
 	// use the readings from another sensor if better precision neeeded

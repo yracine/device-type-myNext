@@ -30,7 +30,7 @@ definition(
 )
 
 def get_APP_VERSION() {
-	return "1.0.3"
+	return "1.0.4"
 }
 
 preferences {
@@ -66,8 +66,8 @@ def dashboardPage() {
 				def operatingState = nest?.currentThermostatOperatingState
 				indoorHumidity = nest.currentHumidity
 				indoorTemp = nest.currentTemperature
-				def hasDehumidifier = (nest?.currentValue("has_dehumidifier")) ? nest.currentValue("has_dehumidifier") : 'false'
-				def hasHumidifier = (nest?.currentValue("has_humidifier")) ? nest.currentValue("has_humidifier") : 'false'
+				def hasDehumidifier = nest?.currentValue("has_dehumidifier")
+				def hasHumidifier = nest?.currentValue("has_humidifier")
 				String useFanWhenHumidityIsHighString = (settings.useFanWhenHumidityIsHigh) ? 'true' : 'false'
 				String useFanWithHumidifierSwitchesString = (settings.useFanWithHumidifierSwitches) ? 'true' : 'false'
 				String dehumidifyWithACString=(settings.dehumidifyWithACFlag)? 'true': 'false'                
@@ -148,7 +148,7 @@ def dashboardPage() {
 
 			} /* end if nest */
 		}
-		section("Humidifier/Dehumidifier/HRV/ERV Setup") {
+		section("Humidifier/Dehumidifier Setup") {
 			href(name: "toSensorsPage", title: "Configure your sensors", description: "Tap to Configure...", image: getImagePath() + "HumiditySensor.png", page: "sensorSettings")
 			href(name: "toHumidifyPage", title: "Configure your humidifier settings", description: "Tap to Configure...", image: getImagePath() + "Humidifier.jpg", page: "humidifySettings")
 			href(name: "toDehumidifyPage", title: "Configure your dehumidifier settings", description: "Tap to Configure...", image: getImagePath() + "dehumidifier.png", page: "dehumidifySettings")
@@ -529,8 +529,8 @@ def setHumidityLevel() {
 	def nestHumidity = nest.currentHumidity
 	def indoorHumidity = 0
 	def indoorTemp = nest.currentTemperature
-	def hasDehumidifier = (nest?.currentValue("has_dehumidifier")) ? nest.currentValue("has_dehumidifier") : 'false'
-	def hasHumidifier = (nest?.currentValue("has_humidifier")) ? nest.currentValue("has_humidifier") : 'false'
+	def hasDehumidifier = nest?.currentValue("has_dehumidifier")
+	def hasHumidifier = nest?.currentValue("has_humidifier")
 	def outdoorHumidity
 
 	// use the readings from another sensor if better precision neeeded

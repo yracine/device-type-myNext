@@ -296,9 +296,18 @@ The smartapp allows the user to get comfort & energy tips based on his/her indoo
 
 The above smartapp allows a ST user to trigger some switch(es) (turn on/off or flash) and/or trigger a hello phrase routine when the thermostat is cooling/heating/running the fan/or idle.
 
+
 /****************************************************
 
-<b>d) Zoning smartapps
+<b>d) MonitorAndSetNestHumdity</b>
+
+/****************************************************
+
+The above smartapp allows a ST user to trigger the humidifier/dehumidifier connected to Nest or some humdifier/dehumidifier switch(es) based on the indoor/outdoor conditions at your home in order to reach the target humidity level.
+
+/****************************************************
+
+<b>e) Zoning smartapps
 
 /****************************************************
 

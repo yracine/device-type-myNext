@@ -30,7 +30,7 @@ definition(
 )
 
 def get_APP_VERSION() {
-	return "1.0.5"
+	return "1.0.6"
 }
 
 preferences {
@@ -123,8 +123,8 @@ def dashboardPage() {
 					"HumidityOffsetAllowed: +/- $min_humidity_diff%\n"
 				if (outdoorSensor) {
 					dParagraph = dParagraph +
-						"OudoorHumidity: $outdoorHumidity%\n" +
-						"OudoorTemp: ${outdoorTemp}$scale\n" +
+						"OutdoorHumidity: $outdoorHumidity%\n" +
+						"OutdoorTemp: ${outdoorTemp}$scale\n" +
 						"NormalizedOutHumidity: $corrOutdoorHum%\n" +
 						"IdealIndoorHumidity: $idealIndoorHum%\n"
 				}

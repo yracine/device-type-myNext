@@ -219,7 +219,7 @@ You can click at the top of the window on the smartapp name to filter the logs.
 
 [ST IDE] <b> Check the logs for any installation errors.  Your login info may not have been copied correctly in the MyNextManagerV2's App Settings section.
     
-As a reminder for the Google account users, in order to copy the whole cookie, you'd need to split it into different fields in AppSettings as the SmartThings platform doesn't support long text variables.
+As a reminder for the Google account users, in order to copy the whole cookie, you'd need to split it into different fields in AppSettings/Settings as the SmartThings platform doesn't support long text variables.
     
 *************************************************************************************************************************************
 N.B. If you have any errors:

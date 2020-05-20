@@ -142,7 +142,7 @@ The values of `issue_token` and `cookie` are specific to your Google Account. To
 5. [Chrome] In the 'Filter' box, enter `issueToken`
 6. [Chrome] Go to `home.nest.com`, and click 'Sign in with Google'. Log into your account.
 7. [Chrome] One network call (beginning with `iframerpc`) will appear in the Dev Tools window. Click on it.
-8. [Chrome] In the Headers tab, under General, copy the entire `Request URL` (beginning with `https://accounts.google.com`, ending with `nest.com`). This is your `"google_issue_token"` in the App Settings section of MyNextManagerV2 (ST IDE).Refer to https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
+8. [Chrome] In the Headers tab, under General, copy the entire `Request URL` (beginning with `https://accounts.google.com`, ending with `nest.com`). This is your `"google_issue_token_url"` in the App Settings section of MyNextManagerV2 (ST IDE).Refer to https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
 9. [Chrome] In the 'Filter' box, enter `oauth2/iframe`
 10. [Chrome] Several network calls will appear in the Dev Tools window. Click on the last `iframe` call.
 11.[Chrome] In the Headers tab, under Request Headers, copy the entire `cookie` (usually it starts with `OCAK=...` or or `SID=...` or with other values - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name). You can copy it in your preferred editor to split it in multiple fields of similar length.  Depending on your cookie's length, you may have to split it into 3-6 fields in the IDE.

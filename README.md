@@ -170,6 +170,10 @@ e) [ST IDE] Hit the create button at the bottom
 
 f) [ST IDE] Hit the "publish/for me" button at the top right corner (in the code window)
 
+If the instructions above are not clear enough, you can refer to the troubleshooting section below with some pictures:
+
+http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp
+
 
 # 2) Create a new smartapp (MyNextManagerV2)
 

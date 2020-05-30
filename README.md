@@ -23,11 +23,14 @@ P.S. Technical support packages are also available.
 
 Setup time: about 15-25 minutes depending on your ST skills.
 
+<b>NOTE: If you have many Nest devices (more than 10), due to the ST platform's rate limiting, it is strongly recommended to split your Nest devices into several instances of MyNextManagerV2 (you can rename them in the app as you please: ex MyNextManagerProtect, MyNestManagerTstatAndSensors).</b>
+
 
 PREREQUISITES
 ==============
 Some technical skills & manual tasks are required to setup your Nest devices under ST as the Nest Web APIs used
 are not the "official" ones and don't have an oAuth flow (see LOGIN INFO For NEst or Google Account users below).
+
 
 - a) [Nest] Your Nest products fully operational and connected to Nest Home via the internet
 

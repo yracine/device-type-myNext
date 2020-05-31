@@ -62,7 +62,7 @@ As an example, in North America, </b>
 
 replace https://graph.api.smartthings.com/ide/devices by https://graph-na02-useast1.api.smartthings.com
 
-Or use  https://consigliere-regional.api.smartthings.com/ to point to the right shard.
+Or use https://account.smartthings.com to point to the right shard (automatically).
 
 
 

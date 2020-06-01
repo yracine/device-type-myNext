@@ -23,7 +23,7 @@ P.S. Technical support packages are also available.
 
 Setup time: about 15-25 minutes depending on your ST skills.
 
-<b>NOTE: If you have many Nest devices (around 10 and more), due to the ST platform's rate limiting, it is strongly recommended to split your Nest devices into several instances of MyNextManagerV2 (you can create 2 copies of MyNextManagerV2 smartapp code in the IDE, and change the name at the end of the file, ex MyNextManagerProtects for your protects, MyNestManagerTstatAndSensors for your tstats and sensors).</b>
+<b>NOTE: If you have many Nest devices (around 7 and more), due to the ST platform's rate limiting, it is strongly recommended to split your Nest devices into several instances of MyNextManagerV2, and copy the required login info (you can create 2 copies of MyNextManagerV2 smartapp code in the IDE, and change the name at the end of the file, ex MyNextManagerProtects for your protects, MyNestManagerTstatAndSensors for your tstats and sensors).</b>
 
 
 PREREQUISITES

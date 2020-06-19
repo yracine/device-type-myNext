@@ -79,7 +79,7 @@ def selectProgram() {
 	return dynamicPage(name: "selectProgram", title: "Select Nest Mode", install: false, uninstall: true, nextPage:
 			"Notifications") {
 		section("Change the following Nest thermostat(s)...") {
-			input "thermostats", "device.myNextTstat", title: "Which thermostat(s)", multiple: true
+			input "thermostats", "capability.thermostat", title: "Which thermostat(s)", multiple: true
 		}
 		section("Select Nest Mode") {
 			input "givenClimate", "enum", title: "Change to this mode at Nest (Away, Home)?", options: NestPrograms, required: true

@@ -4,12 +4,6 @@
  *  Copyright 2018 Yves Racine
  *  LinkedIn profile: ca.linkedin.com/pub/yves-racine-m-sc-a/0/406/4b/
  *
-/**
- *  NestChangeMode
- *
- *  Copyright 2018 Yves Racine
- *  LinkedIn profile: ca.linkedin.com/pub/yves-racine-m-sc-a/0/406/4b/
- *
  *  Developer retains all right, title, copyright, and interest, including all copyright, patent rights, trade secret 
  *  in the Background technology. May be subject to consulting fees under the Agreement between the Developer and the Customer. 
  *  Developer grants a non exclusive perpetual license to use the Background technology in the Software developed for and delivered 
@@ -40,7 +34,7 @@ definition(
 )
 
 private def get_APP_VERSION() {
-	return "1.1"
+	return "1.2"
 }    
 
 
@@ -76,7 +70,7 @@ preferences {
 
 
 def selectProgram() {
-    def NestPrograms=['Eco', 'Home']
+    def NestPrograms=['Away', 'Home']
 	def enumModes=[]
 	location.modes.each {
 		enumModes << it.name
@@ -85,17 +79,17 @@ def selectProgram() {
 	return dynamicPage(name: "selectProgram", title: "Select Nest Mode", install: false, uninstall: true, nextPage:
 			"Notifications") {
 		section("Change the following Nest thermostat(s)...") {
-			input "thermostats", "capability.Thermostat", title: "Which thermostat(s)", multiple: true
+			input "thermostats", "device.myNextTstat", title: "Which thermostat(s)", multiple: true
 		}
 		section("Select Nest Mode") {
-			input "givenClimate", "enum", title: "Change to this mode at Nest (Eco, Home)?", options: NestPrograms, required: true
+			input "givenClimate", "enum", title: "Change to this mode at Nest (Away, Home)?", options: NestPrograms, required: true
 		}
 		section("When SmartThings' ST location (hello) mode changes to ('Away', 'Home')[optional]") {
 			input "newMode", "enum", options: enumModes, multiple:true, required: false
 		}
 		section("Enter a delay in minutes [optional, default=immediately after ST hello mode change] ") {
 			input "delay", "number", title: "Delay in minutes [default=immediate]", description:"no delay by default",required:false
-		V2}
+		}
 		section("Do the mode change manually only - not automatically (by pressing the arrow next to its name under Automations/Smartapps to execute the smartapp)") {
 			input "manualFlag", "bool", title: "Manual only [default=false]", description:"optional",required:false
 		}
@@ -172,8 +166,8 @@ private void takeAction() {
 	log.debug (message)
     
 	thermostats.each {
-    	if (givenClimate.toString()=='Eco') {
-			it?.eco()
+    	if (givenClimate.toString()=='Away') {
+			it?.away()
 		} else {
 			it?.home()
 		}            

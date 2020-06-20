@@ -79,7 +79,7 @@ Instead, you have to obtain  `user_id ` and  `access_token` for your account by 
 https://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.2314:_My_Next_devices_are_not_updating_or_my_auth_tokens_are_lost
 
 ________________________________________________________________________
-<b>7 Steps for Nest users who have NOT migrated to a Google account:</b>
+<b>8 Steps for Nest users who have NOT migrated to a Google account:</b>
 ________________________________________________________________________
 
 
@@ -87,20 +87,22 @@ ________________________________________________________________________
 
 2. [Chrome] Hit `preserve Logs` in the Network tab 
 
-3. [Chrome] Log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=157XXXXXX. 
+3. [Chrome] In the 'Filter' box, enter `issueToken`
 
-4. [Chrome] You can use the filter "session" to get the exact info needed.
+4. [Chrome] Log in to home.nest.com and look for the request similar to https://home.nest.com/session?_=157XXXXXX. 
 
-5. [Chrome] You will find `user_id` and `access_token`  in the response to the request.
+5. [Chrome] You can use the filter "session" to get the exact info needed.
 
-6. [Chrome->ST] MyNestManagerV2- AppSettings section: Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE) for MyNextManagerV2, refer to step 2g) below at https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
+6. [Chrome] You will find `user_id` and `access_token`  in the response to the request.
+
+7. [Chrome->ST] MyNestManagerV2- AppSettings section: Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE) for MyNextManagerV2, refer to step 2g) below at https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
 
 FYI,the login info for Nest account users looks like the following (your Nest user id will be different):
 
 nest_user_id=4783742
 nest_access_token=b.4783742.xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-7. [ST IDE] MyNestManagerV2- AppSettings/Settings section: After copying and pasting the login info, press "update" at the bottom of the ST IDE to save your variables.
+8. [ST IDE] MyNestManagerV2- AppSettings/Settings section: After copying and pasting the login info, press "update" at the bottom of the ST IDE to save your variables.
 
 Do not copy the double quotes in the ST IDE variables. 
 
@@ -142,16 +144,15 @@ The values of `issue_token` and `cookie` are specific to your Google Account. To
 2. [Chrome] Open Developer Tools (View/Developer/Developer Tools).
 3. [Chrome] Click on 'Network' tab. 
 4. [Chrome] Make sure 'Preserve Log' is checked.
-5. [Chrome] In the 'Filter' box, enter `issueToken`
-6. [Chrome] Go to `home.nest.com`, and click 'Sign in with Google'. Log into your account.
-7. [Chrome] One network call (beginning with `iframerpc`) will appear in the Dev Tools window. Click on it.
-8. [Chrome] In the Headers tab, under General, copy the entire `Request URL` (beginning with `https://accounts.google.com`, ending with `nest.com`). This is your `"google_issue_token_url"` in the App Settings section of MyNextManagerV2 (ST IDE).Refer to https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
-9. [Chrome] In the 'Filter' box, enter `oauth2/iframe`
-10. [Chrome] Several network calls will appear in the Dev Tools window. Click on the last `iframe` call.
-11.[Chrome] In the Headers tab, under Request Headers, copy the entire `cookie` (usually it starts with `OCAK=...` or `SID=...` or `SMSV=...`  or with other values - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name). You can copy it in your preferred editor to split it in multiple fields of similar length.  Depending on your cookie's length, you may have to split it into 3-6 fields in the IDE.
-12. [Chrome->ST IDE] MyNestManagerV2- AppSettings/Settings section: This is your "cookie" in the Settings section of the MyNextManagerV2 smartapp in the ST IDE. In order to copy the whole cookie, you'd need to split it into different google_cookie_p* fields in the Settings section as the SmartThings platform doesn't support long text variables. If the text is too long, SmartThings will report an exception (500) when you try to save a too long cookie field.  Refer to step 2g) below at https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
-13. [Chrome->ST IDE]   MyNestManagerV2- AppSettings/Settings section: Make sure that all your google_cookie_p* fields contain the whole cookie from Google.
-14. [ST IDE]  MyNestManagerV2- AppSettings/Settings section: After copying and pasting the login info, press "update" at the bottom of the ST IDE to save your variables.
+5. [Chrome] Go to `home.nest.com`, and click 'Sign in with Google'. Log into your account.
+6. [Chrome] One network call (beginning with `iframerpc`) will appear in the Dev Tools window. Click on it.
+7. [Chrome] In the Headers tab, under General, copy the entire `Request URL` (beginning with `https://accounts.google.com`, ending with `nest.com`). This is your `"google_issue_token_url"` in the App Settings section of MyNextManagerV2 (ST IDE).Refer to https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
+8. [Chrome] In the 'Filter' box, enter `oauth2/iframe`
+9. [Chrome] Several network calls will appear in the Dev Tools window. Click on the last `iframe` call.
+10.[Chrome] In the Headers tab, under Request Headers, copy the entire `cookie` (usually it starts with `OCAK=...` or `SID=...` or `SMSV=...`  or with other values - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name). You can copy it in your preferred editor to split it in multiple fields of similar length.  Depending on your cookie's length, you may have to split it into 3-6 fields in the IDE.
+11. [Chrome->ST IDE] MyNestManagerV2- AppSettings/Settings section: This is your "cookie" in the Settings section of the MyNextManagerV2 smartapp in the ST IDE. In order to copy the whole cookie, you'd need to split it into different google_cookie_p* fields in the Settings section as the SmartThings platform doesn't support long text variables. If the text is too long, SmartThings will report an exception (500) when you try to save a too long cookie field.  Refer to step 2g) below at https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
+12. [Chrome->ST IDE]   MyNestManagerV2- AppSettings/Settings section: Make sure that all your google_cookie_p* fields contain the whole cookie from Google.
+13. [ST IDE]  MyNestManagerV2- AppSettings/Settings section: After copying and pasting the login info, press "update" at the bottom of the ST IDE to save your variables.
 
 
 

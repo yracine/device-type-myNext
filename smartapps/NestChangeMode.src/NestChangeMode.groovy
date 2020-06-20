@@ -34,7 +34,7 @@ definition(
 )
 
 private def get_APP_VERSION() {
-	return "1.2"
+	return "1.2.1"
 }    
 
 
@@ -169,7 +169,7 @@ private void takeAction() {
     	if (givenClimate.toString()=='Away') {
 			it?.away()
 		} else {
-			it?.home()
+			it?.present()
 		}            
 	}        
 }

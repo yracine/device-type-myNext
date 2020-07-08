@@ -155,7 +155,7 @@ The values of `issue_token` and `cookie` are specific to your Google Account. To
 
 
 
-# 1) Depending on your contribution, create one or multiple Device Handler Type(s) - DTH for My NextTstatV2 or MyNextAlarmV2 or NextSensorV2
+# 1) Depending on your contribution, create one or multiple Device Handler Type(s) - DTH for My NextTstatV2 or MyNextAlarmV2 (for Protects) or NextSensorV2
 
 For each device (My NextTstatV2, My NextAlarmV2, My NextSensorV2),
 

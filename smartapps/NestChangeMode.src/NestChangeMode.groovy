@@ -34,7 +34,7 @@ definition(
 )
 
 private def get_APP_VERSION() {
-	return "1.2.1"
+	return "1.3"
 }    
 
 
@@ -43,7 +43,7 @@ preferences {
 
 	page(name: "selectThermostats", title: "Thermostats", install: false , uninstall: true, nextPage: "selectProgram") {
 		section("About") {
-			paragraph "NestChangeMode, the smartapp that sets your Nest thermostat to a 'Away' or 'Home'" + 
+			paragraph "NestChangeMode, the smartapp that sets your Nest structure to a 'Away' or 'Home' or just the tstats to 'Eco'" + 
                 		" based on ST hello mode."
 			paragraph "Version ${get_APP_VERSION()}" 
 			paragraph "If you like this smartapp, please support the developer via PayPal and click on the Paypal link below " 
@@ -82,7 +82,9 @@ def selectProgram() {
 			input "thermostats", "capability.thermostat", title: "Which thermostat(s)", multiple: true
 		}
 		section("Select Nest Mode") {
-			input "givenClimate", "enum", title: "Change to this mode at Nest (Away, Home)?", options: NestPrograms, required: true
+			input "givenClimate", "enum", title: "Change the Nest structure to this mode (Away, Home)?", options: NestPrograms, required: true
+			input "ecoFlag", "bool", title: "Or just set the thermostat(s) to eco?", required: false
+            
 		}
 		section("When SmartThings' ST location (hello) mode changes to ('Away', 'Home')[optional]") {
 			input "newMode", "enum", options: enumModes, multiple:true, required: false
@@ -166,7 +168,9 @@ private void takeAction() {
 	log.debug (message)
     
 	thermostats.each {
-    	if (givenClimate.toString()=='Away') {
+		if (settings.ecoFlag) {
+			it?.eco()        
+		} else if (givenClimate.toString()=='Away') {
 			it?.away()
 		} else {
 			it?.present()

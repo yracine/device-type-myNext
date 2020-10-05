@@ -30,7 +30,7 @@ definition(
 )
 
 def get_APP_VERSION() {
-	return "1.0.6"
+	return "1.0.7"
 }
 
 preferences {
@@ -786,8 +786,8 @@ def setHumidityLevel() {
 				log.trace("humidity level (${nestHumidity}%) within range, turning off all humidify/fan switches")
 			              
 			}
+			humidifySwitches.off()
 		}
-		humidifySwitches.off()
 		if (settings.useFanWithHumidifierSwitches) {
 			if (detailedNotif) {
 				log.trace("Indoor humidity is ${nestHumidity}% and close to target humidity, setting the HVAC's fan to off")

@@ -205,7 +205,7 @@ http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_d
 
 
 
-# 3) Under the new Samsung connect app, execute MyNextManagerV2 (under + in the upper right corner/Smartapps)
+# 3) Under the new Samsung connect app, execute MyNextManagerV2 (under + in the upper right corner/Smartapp)
 
 [ST IDE] <b>  Go to the IDE in order to watch for any exceptions/errors in the logs.
     

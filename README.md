@@ -20,6 +20,8 @@ http://www.ecomatiqhomes.com/store
 P.S. Technical support packages are also available.
 **************************************************************************************************
 
+*** The devices can be created using the Samsung connect app ****
+
 
 Setup time: about 15-25 minutes depending on your ST skills.
 

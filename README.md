@@ -37,18 +37,8 @@ are not the "official" ones and don't have an oAuth flow (see LOGIN INFO For NEs
     Please note that all Nest thermostat devices are supported <b>except</b> the Nest thermostat E in the UK (with the heat link).       <b>Next Cams & Door Bells, and the Nest Secure Alarm are not supported. </b>  
     
 - b) [Nest] <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!) 
-    
-- c) [ST CLASSIC APP] The installation must proceed with the SmartThings classic mobile app, so you have to download it first from your appStore. This is required as any custom DTHs can only be instantiated or created via the ST classic mobile app </b>
 
-However, after creating the devices under SmartThings, you can return to the new Samsung Connect app if you prefer as both apps (ST classic, STSC) can run in parallel without any issues.
-
-- d) [ST CLASSIC APP] <b>Location set for your ST account under the ST classic mobile app </b>
-
-<b>Under the ST classic mobile app</b>, click on the 3-horizontal lines- "hamburger"- menu in the upper left corner, and then the "gear'" icon to review your location and save it.  You can refer to the SmartThings' documentation for more details.
-
-https://support.smartthings.com/hc/en-us/articles/205956850-How-to-edit-Location-settings
-
-- e) [ST IDE] <b>Determine your shard, please consult this thread: </b>
+- c) [ST IDE] <b>Determine your shard, please consult this thread: </b>
 
 
 https://community.smartthings.com/t/faq-how-to-find-out-what-shard-cloud-slice-ide-url-your-account-location-is-on/53923
@@ -108,7 +98,7 @@ ______________
 <b>Notes:</b>
 ______________
 
-* If you lose your auth tokens, then you'd need to redo the steps above and copy over the new nest access_token back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the ST classic mobile app by pressing "Next" till "Save").
+* If you lose your auth tokens, then you'd need to redo the steps above and copy over the new nest access_token back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the Samsung connect app by pressing "Next" till "Save").
 
 * You don't need to re-install the devices, just reset the Nest connection.
 
@@ -123,7 +113,7 @@ ______________
 
 * <b> Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in ST (i.e., do not log off, but you can close your browser and even turn off your desktop/mobile), and don't change your Google account password or 2FA settings.</b>
 
-* If you lose your auth tokens, then you'd need to redo the steps below and copy over the new google cookie and issue_token_url back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the ST classic mobile app by pressing "Next" till "Save").
+* If you lose your auth tokens, then you'd need to redo the steps below and copy over the new google cookie and issue_token_url back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 (under the '+' sign in the upper right corner of the Samsung connect app) by pressing "Next" till "Save").
 
 * You don't need to re-install the devices, just reset the Nest connection.
 
@@ -210,7 +200,8 @@ If the instructions above are not clear enough, you can refer to the troubleshoo
 http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp
 
 
-# 3) Under the ST classic mobile app, execute MyNextManagerV2 (MarketSpace>Smartapps>MyApps)
+
+# 3) Under the new Samsung connect app, execute MyNextManagerV2 (under + in the upper right corner/Smartapps)
 
 [ST IDE] <b>  Go to the IDE in order to watch for any exceptions/errors in the logs.
     
@@ -218,9 +209,7 @@ https://graph.api.smartthings.com/ide/logs (or whatever your shard is, under Liv
 
 You can click at the top of the window on the smartapp name to filter the logs.
 
-[ST CLASSIC APP] <b>Click on the Smartapps link in the upper section of the following Marketspace screen (last icon in the bottom menu), and then Smartapps/MyApps (last item in the list).</b>
-
-[ST CLASSIC APP] To execute MyNextManagerV2, find the MyNextManagerV2 smartapp under MarketSpace>Smartapps>MyApps, My NextManagerV2 should be in the middle of the list. To start the Authentication with Nest, press Next on the first page.  
+[Samsung Connect App] To execute MyNextManagerV2, find the MyNextManagerV2 smartapp under the <+> sign in the upper right corner/Smartapp, My NextManagerV2 should be in the middle of the list (Custom section). To start the Authentication with Nest, press Next on the first page.  
 
 [ST IDE] <b> Check the logs for any installation errors.  Your login info may not have been copied correctly in the MyNextManagerV2's App Settings section.
     
@@ -229,11 +218,11 @@ As a reminder for the Google account users, in order to copy the whole cookie, y
 *************************************************************************************************************************************
 N.B. If you have any errors:
 
-[ST CLASSIC APP] If you get a blank screen after pressing 'Next or you get the following error: "Error - bad state' or 'Java.lang.NullPointerException: Cannot get property 'accessToken' on null object" in the IDE', you'd need to enable oAuth as specified in step 2f) above.
+[Samsung Connect App] If you get a blank screen after pressing 'Next or you get the following error: "Error - bad state' or 'Java.lang.NullPointerException: Cannot get property 'accessToken' on null object" in the IDE', you'd need to enable oAuth as specified in step 2f) above.
 
-[ST CLASSIC APP] <b> At the end of the authorization flow,  if you have the following error message: "Unexpected error" even if you press several times, this probably means that you have not "saved & published" one of the Device Handler Types (MyNextTstatV2,MyNextAlarmV2,MyNextSensorV2) under the right shard.  Refer to the prerequisites & step 1 for more details.
+[Samsung Connect App] <b> At the end of the authorization flow,  if you have the following error message: "Unexpected error" even if you press several times, this probably means that you have not "saved & published" one of the Device Handler Types (MyNextTstatV2,MyNextAlarmV2,MyNextSensorV2) under the right shard.  Refer to the prerequisites & step 1 for more details.
  
-[ST CLASSIC APP] Also, depending on the ST platform status, you may have to press "Save" several times if you have the following error message: "Error processing your request - please try again".  This is due to some ST platform timeouts due to rate limiting.</b> 
+[Samsung Connect App] Also, depending on the ST platform status, you may have to press "Save" several times if you have the following error message: "Error processing your request - please try again".  This is due to some ST platform timeouts due to rate limiting.</b> 
  
 *************************************************************************************************************************************
 
@@ -246,14 +235,9 @@ After about 1 minute, You should see your newly Next devices instantiated under:
 
 And also
 
-[ST CLASSIC APP] b) Under the ST classic mobile app, under MyHome/Things (main menu at the bottom of the screen).
+[Samsung Connect App] b)At the bottom of the main screen under 'No room assigned' at the bottom of the page.
 
-# 5) To populate the UI fields for your newly created device(s), press the "refresh" tile </b>
-
-[ST CLASSIC APP] If the fields are blank, you may have to hit the 'refresh' button on your newly created Next devices as the smartThings UI is not always responsive. 
-
-
-# 6) (Optional) Set device's preferences 
+# 5) (Optional) Set device's preferences 
 
 
 a) [ST IDE] Go to https://graph.api.smartthings.com/device/list   (or whatever your shard is and click on My Devices in the IDE's top menu)
@@ -262,7 +246,6 @@ b) [ST IDE] Click on the Next Devices that you just created
 
 c) [ST IDE] Click on Preferences (edit)
 
-N.B. [ST CLASSIC APP] You can also edit the preferences under Things/Your Device/Edit Device using the app.
 
 You only need to edit the following parameters
 
@@ -274,7 +257,7 @@ You only need to edit the following parameters
 P.S. Don't enter any values for the internal ID or the structure ID as those values are provided by the Service Manager during the authentification flow
 
 
-# 7) Use some of my smartapps (optional) - For all Nest users
+# 6) Use some of my smartapps (optional) - For all Nest users
 
 Some complimentary smartapps at my github, refer to:
 

@@ -1,5 +1,5 @@
 /***
- *  Copyright 2014-2020 Yves Racine
+ *  Copyright Yves Racine
  *  LinkedIn profile: ca.linkedin.com/pub/yves-racine-m-sc-a/0/406/4b/
  *
  *  Developer retains all right, title, copyright, and interest, including all copyright, patent rights, trade secret 
@@ -30,7 +30,7 @@ definition(
 )
 
 def get_APP_VERSION() {
-	return "1.0.7"
+	return "1.1"
 }
 
 preferences {
@@ -230,22 +230,19 @@ def otherSettings() {
 		section("What do I use for the Master on/off switch to enable/disable processing? (optional)") {
 			input "powerSwitch", "capability.switch", required: false
 		}
-		section("Notifications") {
-			input "sendPushMessage", "enum", title: "Send a push notification?", metadata: [values: ["Yes", "No"]], required:
-				false
-			input "phoneNumber", "phone", title: "Send a text message?", required: false
-		}
-		section("Detailed Logging/Notifications") {
-			input "detailedNotif", "bool", title: "Detailed Logging/Notifications?", required:
+		section("Logging") {
+			input "detailedNotif", "bool", title: "Detailed Logging?", required:
 				false
 		}
-		section("Enable Amazon Echo/Ask Alexa Notifications for events logging (optional)") {
-			input(name: "askAlexaFlag", title: "Ask Alexa verbal Notifications [default=false]?", type: "bool",
-				description: "optional", required: false)
-			input(name: "listOfMQs", type: "enum", title: "List of the Ask Alexa Message Queues (default=Primary)", options: state?.askAlexaMQ, multiple: true, required: false,
-				description: "optional")
-			input "AskAlexaExpiresInDays", "number", title: "Ask Alexa's messages expiration in days (optional,default=2 days)?", required: false
-		}
+		if (isST()) {      
+	    		section("Enable Amazon Echo/Ask Alexa Notifications for events logging (optional)") {
+	    			input(name: "askAlexaFlag", title: "Ask Alexa verbal Notifications [default=false]?", type: "bool",
+		    			description: "optional", required: false)
+	    			input(name: "listOfMQs", type: "enum", title: "List of the Ask Alexa Message Queues (default=Primary)", options: state?.askAlexaMQ, multiple: true, required: false,
+			    		description: "optional")
+	    			input "AskAlexaExpiresInDays", "number", title: "Ask Alexa's messages expiration in days (optional,default=2 days)?", required: false
+	    		}
+        	}            
 		section("Set Humidity Level only for specific mode(s) [default=all]") {
 			input(name: "selectedMode", type: "enum", title: "Choose Mode", options: enumModes,
 				required: false, multiple: true, description: "Optional")
@@ -259,6 +256,19 @@ def otherSettings() {
 	}
 }
 
+boolean isST() { 
+    return (getHub() == "SmartThings") 
+}
+
+private getHub() {
+    def result = "SmartThings"
+    if(state?.hub == null) {
+        try { [value: "value"]?.encodeAsJson(); } catch (e) { result = "Hubitat" }
+        state?.hub = result
+    }
+    log.debug "hubPlatform: (${state?.hub})"
+    return state?.hub
+}
 
 
 def installed() {
@@ -585,7 +595,7 @@ def setHumidityLevel() {
 			send("dehumidify to ${target_humidity}% in ${nestMode} mode using connected dehumidifier and $dehumidifySwitches switch(es)", askAlexaFlag)
 		}
 
-		nest.setThermostatSettings("", ['auto_dehum_enabled': false, 'target_humidity':target_humidity, "target_humidity_enabled":true])
+		nest.setThermostatSettings(null, ['auto_dehum_enabled': false, 'target_humidity':target_humidity, "target_humidity_enabled":true])
 
 		if (settings.useFanWhenHumidityIsHigh) {
 			if (detailedNotif) {
@@ -609,7 +619,7 @@ def setHumidityLevel() {
 
 		//      Turn off the dehumidifer because it's too cold, wait till the next cycle.
 
-		nest.setThermostatSettings("", ['auto_dehum_enabled': false, 'target_humidity':target_humidity, "target_humidity_enabled":false])
+		nest.setThermostatSettings(null, ['auto_dehum_enabled': false, 'target_humidity':target_humidity, "target_humidity_enabled":false])
 
 		if (detailedNotif) {
 			log.trace "nest is in ${nestMode} mode and its humidity > target humidity level=${target_humidity}, need to dehumidify the house " +
@@ -634,7 +644,7 @@ def setHumidityLevel() {
 		(nestHumidity < (target_humidity - min_humidity_diff) && 
 		(nestHumidity < outdoorHumidity))) {
 
-		nest.setThermostatSettings("", ['auto_dehum_enabled': false, 'target_humidity':target_humidity, "target_humidity_enabled":true])
+		nest.setThermostatSettings(null, ['auto_dehum_enabled': false, 'target_humidity':target_humidity, "target_humidity_enabled":true])
 		if (detailedNotif) {
 			log.trace("In ${nestMode} mode, nest's humidity provided is way lower than target humidity level=${target_humidity}, and lower than outdoorHumidity= ${outdoorHumidity}, need to humidify the house with connected humidifier and $humidifySwitches switch(es)")
 			send("humidify to ${target_humidity} in ${nestMode} mode using connected humidifier and $humidifySwitches switch(es)", askAlexaFlag)
@@ -683,7 +693,7 @@ def setHumidityLevel() {
 		(nestHumidity > (target_humidity + min_humidity_diff)) &&
 		(outdoorHumidity > target_humidity)) {
 
-		nest.setThermostatSettings("", ['auto_dehum_enabled': true, 'target_humidity':target_humidity, "target_humidity_enabled":true])
+		nest.setThermostatSettings(null, ['auto_dehum_enabled': true, 'target_humidity':target_humidity, "target_humidity_enabled":true])
 
 		if (detailedNotif) {
 			log.trace("nest humidity provided is way higher than target humidity level=${target_humidity}, need to dehumidify with AC, because normalized outdoor humidity is too high=${outdoorHumidity}")
@@ -716,7 +726,7 @@ def setHumidityLevel() {
 			send("nest humidity provided is way higher than target humidity level=${target_humidity}, need to dehumidify with AC, no dehumidifier is available, flag is set to false in the smartapp, using $dehumidifySwitches switch(es) only",
 				askAlexaFlag)
 		}
-		nest.setThermostatSettings("", ['auto_dehum_enabled': false, 'target_humidity':target_humidity, "target_humidity_enabled":true])
+		nest.setThermostatSettings(null, ['auto_dehum_enabled': false, 'target_humidity':target_humidity, "target_humidity_enabled":true])
 
 		if (dehumidifySwitches) {
 			if (detailedNotif) {
@@ -735,7 +745,7 @@ def setHumidityLevel() {
 			log.trace("Indoor humidity is ${nestHumidity}%, but outdoor humidity (${outdoorHumidity}%) is too high to dehumidify")
 			send("indoor humidity is ${nestHumidity}%, but outdoor humidity ${outdoorHumidity}% is too high to dehumidify, using $dehumidifySwitches switch(es) only", askAlexaFlag)
 		}
-		nest.setThermostatSettings("", ['auto_dehum_enabled': false,  "target_humidity_enabled":false])
+		nest.setThermostatSettings(null, ['auto_dehum_enabled': false,  "target_humidity_enabled":false])
 
 		if (settings.useFanWhenHumidityIsHigh) {
 			nest.fanOn() // set fan on
@@ -766,7 +776,7 @@ def setHumidityLevel() {
 
 	} else {
 
-		nest.setThermostatSettings("", ['target_humidity':target_humidity, "target_humidity_enabled":false,"auto_dehum_enabled":false])
+		nest.setThermostatSettings(null, ['target_humidity':target_humidity, "target_humidity_enabled":false,"auto_dehum_enabled":false])
 		if (detailedNotif) {
 			log.trace("All off, humidity level (${nestHumidity}%) within range")
 			send("all off, humidity level (${nestHumidity}%) within range", askAlexaFlag)

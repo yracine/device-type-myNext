@@ -21,20 +21,20 @@ P.S. Technical support packages are also available.
 
 
 
-Setup time: about 15-25 minutes depending on your ST skills.
+Setup time: about 15-25 minutes depending on your Hubitat skills.
 
-<b>NOTE: If you have many Nest devices (around 7 and more), due to the ST platform's rate limiting, it is strongly recommended to split your Nest devices into several instances of MyNextManagerV2, and copy the required login info (you can create 2 copies of MyNextManagerV2 smartapp code in the IDE, and change the name at the end of the file, ex MyNextManagerProtects for your protects, MyNestManagerTstatAndSensors for your tstats and sensors).</b>
 
 
 PREREQUISITES
 ==============
-Some technical skills & manual tasks are required to setup your Nest devices under ST as the Nest Web APIs used
+Some technical skills & manual tasks are required to setup your Nest devices under Hubitat as the Nest Web APIs used
 are not the "official" ones and don't have an oAuth flow (see LOGIN INFO For NEst or Google Account users below).
 
 
 - a) [Nest] Your Nest products fully operational and connected to Nest Home via the internet
 
-    Please note that all Nest thermostat devices are supported <b>except</b> the Nest thermostat E in the UK (with the heat link).       <b>Next Cams & Door Bells, and the Nest Secure Alarm are not supported. </b>  
+    Please note that all Nest thermostat devices are supported <b>except</b> the Nest thermostat E in the UK (with the heat link).      
+    <b>Next Cams & Door Bells, and the Nest Secure Alarm are not supported. </b>  
     
 - b) [Nest] <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!) 
 
@@ -43,7 +43,7 @@ are not the "official" ones and don't have an oAuth flow (see LOGIN INFO For NEs
 LOGIN INFO REQUIRED FOR NEST ACCOUNT Users (Not migrated to a Google account) 
 =============================================================================
 
-* <b> Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in ST (i.e., do not log off, but you can close your browser and even turn off your desktop/mobile), and don't change your Nest account password or 2FA settings.</b>
+* <b> Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in Hubitat (i.e., do not log off, but you can close your browser and even turn off your desktop/mobile), and don't change your Nest account password or 2FA settings.</b>
 
 * Google recently introduced reCAPTCHA when logging to Nest. That means username and password cannot be used directly any more. 
 Instead, you have to obtain  `user_id ` and  `access_token` for your account by logging in manually. 
@@ -82,13 +82,13 @@ b) click on MyNextManagerV2 in the list of smartapps.
 
 c) Copy the nest user and auth token into the header as global variables.
 
-Do not copy the double quotes in the ST IDE variables. 
+Do not copy the double quotes in the global variables. 
 
 ______________
 <b>Notes:</b>
 ______________
 
-* If you lose your auth tokens, then you'd need to redo the steps above and copy over the new nest access_token back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the Samsung connect app by pressing "Next" till "Save").
+* If you lose your auth tokens, then you'd need to redo the steps above and copy over the new nest access_token back to the Hubitat IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the Samsung connect app by pressing "Next" till "Save").
 
 * You don't need to re-install the devices, just reset the Nest connection.
 
@@ -101,9 +101,9 @@ ______________
 <b>Notes:</b>
 ______________
 
-* <b> Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in ST (i.e., do not log off, but you can close your browser and even turn off your desktop/mobile), and don't change your Google account password or 2FA settings.</b>
+* <b> Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in Hubitat (i.e., do not log off, but you can close your browser and even turn off your desktop/mobile), and don't change your Google account password or 2FA settings.</b>
 
-* If you lose your auth tokens, then you'd need to redo the steps below and copy over the new google cookie and issue_token_url back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 (under the '+' sign in the upper right corner of the Samsung connect app) by pressing "Next" till "Save").
+* If you lose your auth tokens, then you'd need to redo the steps below and copy over the new google cookie and issue_token_url back to the Hubitat IDE. You can then reset the Nest connection by executing MyNextManagerV2 (under the '+' sign in the upper right corner of the Samsung connect app) by pressing "Next" till "Save").
 
 * You don't need to re-install the devices, just reset the Nest connection.
 
@@ -141,7 +141,7 @@ b) click on MyNextManagerV2 in the list of smartapps.
 
 c) Copy the nest user and auth token into the header as global variables.
 
-Do not copy the double quotes in the ST IDE variables
+Do not copy the double quotes in the global variables
 
 
 # 1) Depending on your contribution, create one or multiple device driver(s) - DTH for My NextTstatV2 or MyNextAlarmV2 (for Protects) or NextSensorV2
@@ -227,6 +227,7 @@ You only need to edit the following parameters
     
 And, press "save preferences" at the end.
 
+N.B. The detailed logging will be set for the next 15 minutes only (deactivated after to avoid performance issues)
 
 # 6) Use some of my smartapps (optional) - For all Nest users
 
@@ -240,7 +241,7 @@ https://github.com/yracine/device-type-myNext/tree/master/smartapps
 
 /****************************************************
 
-Change your Nest Away/Home settings according to your ST (location) hello home mode.
+Change your Nest Away/Home settings according to your Hubitat location or  hello home mode.
 
 /****************************************************
 
@@ -257,7 +258,7 @@ The smartapp allows the user to get comfort & energy tips based on his/her indoo
 
 /****************************************************
 
-The above smartapp allows a ST user to trigger some switch(es) (turn on/off or flash) and/or trigger a hello phrase routine when the thermostat is cooling/heating/running the fan/or idle.
+The above smartapp allows a Hubitat user to trigger some switch(es) (turn on/off or flash) and/or trigger a hello phrase routine when the thermostat is cooling/heating/running the fan/or idle.
 
 
 /****************************************************
@@ -266,7 +267,7 @@ The above smartapp allows a ST user to trigger some switch(es) (turn on/off or f
 
 /****************************************************
 
-The above smartapp allows a ST user to trigger the humidifier/dehumidifier connected to Nest or some humdifier/dehumidifier switch(es) based on the indoor/outdoor conditions at your home in order to reach the target humidity level.
+The above smartapp allows a Hubitat user to trigger the humidifier/dehumidifier connected to Nest or some humdifier/dehumidifier switch(es) based on the indoor/outdoor conditions at your home in order to reach the target humidity level.
 
 /****************************************************
 
@@ -280,7 +281,7 @@ The following zoned Heating/cooling smartapps have many features to leverage you
 * User friendly Dashboard and workflow pages for easier setup  (i.e. Dashboard->GeneralSetup->RoomsSetup->ZonesSetup->SchedulesSetup-> NotificationSettings).
 * Flexible schedule definition: you can define up to 12 schedules for your zones (mornings, weekdays, evenings, nights, weekends, etc.)
 * Remote Sensors: choice of  temp calculation method (Average, Median, Minimum, Maximum, Heat/Min-Cool/Max) based on all room temp sensors inside the zone so that your heat/cool settings are adjusted at the main thermostat even if your rooms are far away. The average calculation is similar to the ecobee3's follow me feature with its remote sensors.
-* For each schedule, ST users can define the start & end times, the thermostat's heating/cooling setpoints (or climates for ecobee), the max temp adjustment based on the chosen calculation method (avg, median, min, max, etc.)
+* For each schedule, Hubitat users can define the start & end times, the thermostat's heating/cooling setpoints (or climates for ecobee), the max temp adjustment based on the chosen calculation method (avg, median, min, max, etc.)
 * You can set your schedules to run only for some routines/ST hello modes (ex. 'Away', 'Home', 'Night', or your own customized ones )
 * For each schedule, you can assign the included zone(s) according to your own requirements (ex. Upstairs bedrooms, 1st level, basement, etc)
 * You can define up to 8 zones for your home which can include up to 16 rooms
@@ -308,7 +309,7 @@ For more details:
 
 http://thingsthataresmart.wiki/index.php?title=ScheduleTstatZones
 
-The smartapp that enables Multi Zoned Heating/Cooling Solutions based on any ST connected thermostats/sensors- - coupled with smart vents (optional, can be any Flair, Keen Home, EcoVent, EcoNet smart vents) for better temp settings control throughout your home". 
+The smartapp that enables Multi Zoned Heating/Cooling Solutions based on any connected thermostats/sensors- - coupled with smart vents (optional, can be any Flair, Keen Home, EcoVent, EcoNet smart vents) for better temp settings control throughout your home". 
 
 The smartapp will use the thermostat's setpoints as baselines for targeted heating/cooling based on the concept of virtual/physical zones.
 

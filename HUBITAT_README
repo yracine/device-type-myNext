@@ -1,15 +1,11 @@
 # device-type-MyNext integration
 
 
-*** The devices can be created using the Samsung connect app ****
-
 My Next devices
 
 Author:             Yves Racine
 
 linkedIn profile:   www.linkedin.com/in/yracine
-
-Date:               2020-04-10
 
 Credits:             github @gboudreau for the initial Nest APIs discovery
 
@@ -137,11 +133,18 @@ The values of `issue_token` and `cookie` are specific to your Google Account. To
 12. [Chrome->ST IDE]   MyNestManagerV2- AppSettings/Settings section: Make sure that all your google_cookie_p* fields contain the whole cookie from Google. 
 Please make sure to avoid inserting extra spaces or any other characters when you split the cookie as this will not be accepted by Google, and the cookie
 will not be recognized (and your list of devices will be empty).
-13. [ST IDE]  MyNestManagerV2- AppSettings/Settings section: After copying and pasting the login info, press "update" at the bottom of the ST IDE to save your variables.
+13. [Hubitat IDE]  MyNestManagerV2 header: After copying and pasting the login info in the header, press "save" to save your global variables.
+
+a) go to http://192.168.xx.xx/app/list (insert your own hub's ip address)
+
+b) click on MyNextManagerV2 in the list of smartapps.
+
+c) Copy the nest user and auth token into the header as global variables.
+
+Do not copy the double quotes in the ST IDE variables
 
 
-
-# 1) Depending on your contribution, create one or multiple Device Handler Type(s) - DTH for My NextTstatV2 or MyNextAlarmV2 (for Protects) or NextSensorV2
+# 1) Depending on your contribution, create one or multiple device driver(s) - DTH for My NextTstatV2 or MyNextAlarmV2 (for Protects) or NextSensorV2
 
 For each device (My NextTstatV2, My NextAlarmV2, My NextSensorV2),
 

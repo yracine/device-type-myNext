@@ -30,7 +30,7 @@ definition(
 )
 
 def get_APP_VERSION() {
-	return "1.1"
+	return "1.1.1"
 }
 
 preferences {
@@ -340,7 +340,7 @@ def rescheduleIfNeeded(evt) {
 		Double lastPollTimeInMinutes = (lastPollTime / 60000).toDouble().round(1)
 		log.info "rescheduleIfNeeded>last poll was  ${lastPollTimeInMinutes.toString()} minutes ago"
 	}
-	if (((state?.poll["last"] ?: 0) + (delay * 60000) < currentTime) && canSchedule()) {
+	if (((state?.poll["last"] ?: 0) + (delay * 60000) < currentTime)) {
 		log.info "rescheduleIfNeeded>scheduling setHumidityLevel in ${delay} minutes.."
 		schedule("0 0/${delay} * * * ?", setHumidityLevel)
 		setHumidityLevel()

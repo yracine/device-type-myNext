@@ -30,7 +30,7 @@ definition(
 )
 
 def get_APP_VERSION() {
-	return "1.1.1"
+	return "1.2"
 }
 
 preferences {
@@ -83,8 +83,11 @@ def dashboardPage() {
 						calculate_corr_humidity(outdoorTemp, outdoorHumidity, indoorTemp).round() :
 						calculate_corr_humidity(fToC(outdoorTemp), outdoorHumidity, fToC(indoorTemp)).round()
 				}
-				def idealIndoorHum = (scale == 'C') ? find_ideal_indoor_humidity(outdoorTemp) :
-					find_ideal_indoor_humidity(fToC(outdoorTemp))
+                def idealIndoorHum                
+                if (outdoorTemp) {                
+                    idealIndoorHum= (scale == 'C')? find_ideal_indoor_humidity(outdoorTemp):
+                        find_ideal_indoor_humidity(fToC(outdoorTemp))
+                }                                     
 				switch (mode) {
 					case 'cool':
 						coolingSetpoint = nest?.currentValue('coolingSetpoint')

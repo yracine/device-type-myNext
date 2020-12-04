@@ -36,7 +36,7 @@ are not the "official" ones and don't have an oAuth flow (see LOGIN INFO For NEs
     Please note that all Nest thermostat devices are supported <b>except</b> the Nest thermostat E in the UK (with the heat link).      
     <b>Next Cams & Door Bells, and the Nest Secure Alarm are not supported. </b>  
     
-- b) [Nest] <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with SmartThings!!) 
+- b) [Nest] <b>Nest setup completed for your Nest devices under your Nest Primary account  (don't use any Nest secondary accounts for the integation with hubitat!!) 
 
 
 

@@ -210,9 +210,7 @@ If you get a blank screen after pressing 'Next or you get the following error: "
 
 After about 1 minute, You should see your newly Next devices instantiated under:
 
-[Hubitat IDE] 
-
-http://192.168.xx.xx/device/list (insert your own hub's IP address)
+[Hubitat IDE] go to http://192.168.xx.xx/device/list (insert your own hub's IP address)
 
 
 # 5) (Optional) Set device's preferences 

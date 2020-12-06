@@ -89,14 +89,14 @@ ________________________________________________________________________
 
 6. [Chrome->ST] MyNestManagerV2- header section of the code: Copy over the Nest login information to the corresponding nest_* fields in the code (ST IDE) for MyNextManagerV2, refer to step 2g) below at https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
 
-In the header section of MyNextManagerV2, you will see "INSERT THE NEST LOGIN INFORMATION BELOW".
+In the header (code) section of MyNextManagerV2, you will see "INSERT THE NEST LOGIN INFORMATION BELOW".
 
 FYI,the login info for Nest account users looks like the following (your Nest user id will be different):
 
 nest_user_id=4783742
 nest_access_token=b.4783742.xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-7. [ST IDE] MyNestManagerV2- AppSettings/Settings section: After copying and pasting the login info, press "save" and "publish" to save/publish the code with your Nest login variables. Don't insert anything in the google section.
+7. [ST IDE] MyNestManagerV2- header (code) section: After copying and pasting the login info, press "save" and "publish" to save/publish the code with your Nest login variables. Don't insert anything in the google section.
 
 Do not copy the double quotes from the nest login information in the variables. 
 

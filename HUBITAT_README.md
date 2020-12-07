@@ -165,6 +165,10 @@ c) Hit the save button on the right inside of the screen
 d) Make sure that enable OAuth in Smartapp is active (click oAuth in the upper right corner)
 * Hit "Update" at the bottom
 
+e) Copy the login information from Nest or Google under the right global variables (see instructions above)
+
+f) Click on the "save"  button at the right corner to save your login information from Nest/Google as global variables  
+
 If the instructions above are not clear enough, you can refer to the troubleshooting section below with some pictures:
 
 http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp

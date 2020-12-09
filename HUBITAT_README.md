@@ -186,8 +186,7 @@ a) Click on "Add User app" in the right corner of the window
 
 http://192.168.xx.xx/logs (insert your own hub's IP address)
     
-As a reminder for the Google account users, in order to copy the whole cookie, you'd need to split it into different fields as global variables as the platform doesn't support long text variables.
-    
+
 *************************************************************************************************************************************
 N.B. If you have any errors:
 

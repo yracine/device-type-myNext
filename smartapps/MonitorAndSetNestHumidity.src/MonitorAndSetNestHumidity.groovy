@@ -30,7 +30,7 @@ definition(
 )
 
 def get_APP_VERSION() {
-	return "1.2"
+	return "1.3"
 }
 
 preferences {
@@ -406,7 +406,7 @@ def setHumidityLevel() {
 	}
 
 	boolean foundMode = selectedMode.find {
-		it == (location.currentMode as String)
+		it == (location.mode as String)
 	}
 	if ((selectedMode != null) && (!foundMode)) {
 		if (detailedNotif) {
@@ -480,7 +480,7 @@ def setHumidityLevel() {
 		return
 	}
 
-	if (outdoorSensor.hasCapability("Polling")) {
+	if (outdoorSensor && outdoorSensor.hasCapability("Polling")) {
 		try {
 			outdoorSensor.poll()
 		} catch (e) {
@@ -490,7 +490,7 @@ def setHumidityLevel() {
 				send(msg, askAlexaFlag)
 			}
 		}
-	} else if (outdoorSensor.hasCapability("Refresh")) {
+	} else if (outdoorSensor && outdoorSensor.hasCapability("Refresh")) {
 		try {
 			outdoorSensor.refresh()
 		} catch (e) {

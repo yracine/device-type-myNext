@@ -289,7 +289,7 @@ The following zoned Heating/cooling smartapps have many features to leverage you
 
 
 <b>
-http://www.ecomatiqhomes.com/store 
+http://www.ecomatiqhomes.com/hubitatstore 
 </b>
 
 

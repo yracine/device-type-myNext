@@ -137,7 +137,7 @@ c) Copy the nest user and auth token into the header as global variables.
 Do not copy the double quotes in the global variables
 
 
-# 1) Depending on your contribution, create one or multiple device driver(s) - DTH for My NextTstatV2 or MyNextAlarmV2 (for Protects) or NextSensorV2
+# 1) Depending on your contribution, create one or multiple device driver(s) - DTH for My NextTstat or MyNextAlarm (for Protects) or NextSensor
 
 For each device (My NextTstat, My NextAlarm, My NextSensor),
 

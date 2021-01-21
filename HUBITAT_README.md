@@ -196,19 +196,19 @@ N.B. If you have any errors:
 
 If you get a blank screen after pressing 'Next or you get the following error: "Error - bad state' or 'Java.lang.NullPointerException: Cannot get property 'accessToken' on null object" in the IDE', you'd need to enable oAuth as specified in step 2d) above.
 
-
+At the end of the authorization flow, if you have the following error message: "Unexpected error" even if you press several times, this probably means that you have not "saved" one of the drivers (MyNextTstat, MyNextAlarm, MyNextSensor). Refer to step 1 for more details.
   
 *************************************************************************************************************************************
 
 
-# 4) Your device(s) should now be created among your installed devices
+# 5) Your device(s) should now be created among your installed devices
 
 After about 1 minute, You should see your newly Next devices instantiated under:
 
 [Hubitat IDE] go to http://192.168.xx.xx/device/list (insert your own hub's IP address)
 
 
-# 5) (Optional) Set device's preferences 
+# 6) (Optional) Set device's preferences 
 
 a) Click on the My Next devices that you just created
 
@@ -227,7 +227,7 @@ And, press "save preferences" at the end.
 
 N.B. The detailed logging will be set for the next 15 minutes only (deactivated after to avoid performance issues)
 
-# 6) Use some of my smartapps (optional) - For all Nest users
+# 7) Use some of my smartapps (optional) - For all Nest users
 
 Some complimentary smartapps at my github, refer to:
 

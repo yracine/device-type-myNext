@@ -174,7 +174,7 @@ If the instructions above are not clear enough, you can refer to the troubleshoo
 http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp
 
 
-# 3) Go to the installed apps section of hubitat, execute MyNextManagerV2 
+# 3) Go to the installed apps section of hubitat, execute MyNextManager
 
 http://192.168.xx.xx/installedapp/list (insert your own hub's IP address)
 
@@ -206,7 +206,7 @@ After about 1 minute, You should see your newly Next devices instantiated under:
 
 # 5) (Optional) Set device's preferences 
 
-a) Click on the My ecobee device that you just created
+a) Click on the My Next devices that you just created
 
 
 http://192.168.xx.xx/device/edit/"device number"  (Device number can vary from one location to the next)

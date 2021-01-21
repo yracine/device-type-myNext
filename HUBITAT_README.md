@@ -1,5 +1,9 @@
 # device-type-MyNext Hubitat integration
 
+For more details on the extensive features & capabilities of MyEcobee device, please refer to this Hubitat community thread:
+
+https://community.hubitat.com/t/release-my-next-manager-for-your-nest-tstats-protects-and-sensors-all-nest-attributes-available-home-away-settargethumidity-sethotwaterboost-for-automation-and-no-throttling/58240
+
 
 My Next devices
 
@@ -13,7 +17,7 @@ Credits:             github @gboudreau for the initial Nest APIs discovery
 You can now download the code at 
 
 <b>
-http://www.ecomatiqhomes.com/store 
+http://www.ecomatiqhomes.com/hubitatstore 
 </b>
 
 P.S. Technical support packages are also available.

@@ -67,15 +67,15 @@ ________________________________________________________________________
 
 5. [Chrome] You will find `user_id` and `access_token`  in the response to the request.
 
-6. [Chrome->ST] MyNestManagerV2- AppSettings section: Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE) for MyNextManagerV2, refer to step 2g) below at https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
+6. [Chrome->ST] MyNestManager- Copy over the Nest login information to the corresponding nest_* fields in App Settings (ST IDE) for MyNextManagerV2, refer to step 2g) below at https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
 
-In the header (code) section of MyNextManagerV2, you will see "INSERT THE NEST LOGIN INFORMATION BELOW".
+In the header (code) section of MyNextManager, you will see "INSERT THE NEST LOGIN INFORMATION BELOW".
 
 FYI,the login info for Nest account users looks like the following (your Nest user id will be different):
 
 nest_user_id=4783742 nest_access_token=b.4783742.xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-[ST IDE] MyNestManagerV2- header (code) section: After copying and pasting the login info, press "save" and "publish" to save the code with your Nest login variables. Don't insert anything in the google section.
+[ST IDE] MyNestManager- header (code) section: After copying and pasting the login info, press "save" and "publish" to save the code with your Nest login variables. Don't insert anything in the google section.
 Do not copy the double quotes from the nest login information in the variables.
 ______________
 <b>Notes:</b>
@@ -122,15 +122,15 @@ The values of `issue_token` and `cookie` are specific to your Google Account. To
 10. [Chrome] In the 'Filter' box, enter `oauth2/iframe`
 11. [Chrome] Several network calls will appear in the Dev Tools window. Click on the last `iframe` call.
 12.[Chrome] In the Headers tab, under Request Headers, copy the entire `cookie` (usually it starts with `OCAK=...` or `SID=...` or `SMSV=...`  or with other values - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name). This google "cookie" needs to be copied over in the code (header) section of the MyNextManagerV2 smartapp  under the instructions saying 'INSERT GOOGLE LOGIN INFO BELOW'.  See https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
-13. [Chrome->ST IDE]   MyNestManagerV2- Make sure that the whole cookie from Google is contained in google_cookiep1.  There is no need to split the cookie anymore (the other google_cookie p2-p6 variables are used for backward compatibility. Please make sure to avoid inserting extra spaces or any other characters when you copy the google cookie as Google will not accept it and the list of devices will be empty.
-14. [ST IDE]  MyNestManagerV2- After copying and pasting the login info, press "save" and "publish" at the right corner of the IDE to save the code with your variables.
+13. [Chrome->ST IDE]   MyNestManager- Make sure that the whole cookie from Google is contained in google_cookiep1.  There is no need to split the cookie anymore (the other google_cookie p2-p6 variables are used for backward compatibility. Please make sure to avoid inserting extra spaces or any other characters when you copy the google cookie as Google will not accept it and the list of devices will be empty.
+14. [ST IDE]  MyNestManager- After copying and pasting the login info, press "save" and "publish" at the right corner of the IDE to save the code with your variables.
 be recognized (and your list of devices will be empty).
 
-13. [Hubitat IDE]  MyNestManagerV2 header: After copying and pasting the login info in the header, press "save" to save your global variables.
+13. [Hubitat IDE]  MyNestManager header: After copying and pasting the login info in the header, press "save" to save your global variables.
 
 a) go to http://192.168.xx.xx/app/list (insert your own hub's ip address)
 
-b) click on MyNextManagerV2 in the list of smartapps.
+b) click on MyNextManager in the list of smartapps.
 
 c) Copy the nest user and auth token into the header as global variables.
 
@@ -139,7 +139,7 @@ Do not copy the double quotes in the global variables
 
 # 1) Depending on your contribution, create one or multiple device driver(s) - DTH for My NextTstatV2 or MyNextAlarmV2 (for Protects) or NextSensorV2
 
-For each device (My NextTstatV2, My NextAlarmV2, My NextSensorV2),
+For each device (My NextTstat, My NextAlarm, My NextSensor),
 
 a) Create a new device driver 
 
@@ -152,7 +152,7 @@ c) Copy and paste the code from the corresponding txt file in the zip
 d) Hit the save button on the right inside of the screen
 
 
-# 2) Create a new smartapp (MyNextManagerV2)
+# 2) Create a new smartapp (MyNextManager)
 
 go to http://192.168.xx.xx/app/list (insert your own hub's IP address)
 
@@ -162,7 +162,7 @@ b) Copy and paste the code from the corresponding txt file in the zip
 
 c) Hit the save button on the right inside of the screen
 
-d) Make sure that enable OAuth in Smartapp is active (click oAuth in the upper right corner)
+d) Make sure to enable OAuth in Smartapp is active (click oAuth in the upper right corner)
 * Hit "Update" at the bottom
 
 e) Copy the login information from Nest or Google under the right global variables (see instructions above)

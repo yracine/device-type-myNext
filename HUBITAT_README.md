@@ -85,7 +85,7 @@ ______________
 <b>Notes:</b>
 ______________
 
-* If you lose your auth tokens, then you'd need to redo the steps above and copy over the new nest access_token back to the Hubitat IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the Samsung connect app by pressing "Next" till "Save").
+* If you lose your auth tokens, then you'd need to redo the steps above and copy over the new nest access_token back to the Hubitat IDE. You can then reset the Nest connection by executing MyNextManager under Automation/Smartapps in the Samsung connect app by pressing "Next" till "Done").
 
 * You don't need to re-install the devices, just reset the Nest connection.
 
@@ -196,7 +196,7 @@ N.B. If you have any errors:
 
 If you get a blank screen after pressing 'Next or you get the following error: "Error - bad state' or 'Java.lang.NullPointerException: Cannot get property 'accessToken' on null object" in the IDE', you'd need to enable oAuth as specified in step 2d) above.
 
-<b> At the end of the authorization flow,  if you have the following error message: "Unexpected error" even if you press several times, this probably means that you have not "saved & published" one of the Device Handler Types (MyNextTstatV2,MyNextAlarmV2,MyNextSensorV2) under the right shard.  Refer to the prerequisites & step 1 for more details.
+
   
 *************************************************************************************************************************************
 

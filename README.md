@@ -27,7 +27,7 @@ P.S. Technical support packages are also available.
 
 Setup time: about 15-25 minutes depending on your ST skills.
 
-<b>NOTE: If you have many Nest devices (around 7 and more), due to the ST platform's rate limiting, it is strongly recommended to split your Nest devices into several instances of MyNextManagerV2, and copy the required login info (you can create 2 copies of MyNextManagerV2 smartapp code in the IDE, and change the name at the end of the file, ex MyNextManagerProtects for your protects, MyNestManagerTstatAndSensors for your tstats and sensors).</b>
+<b>NOTE: If you have many Nest devices (around 7 and more), due to the ST platform's rate limiting, it is strongly recommended to split your Nest devices into several instances of MyNextManager, and copy the required login info (you can create 2 copies of MyNextManager smartapp code in the IDE, and change the name at the end of the file, ex MyNextManagerProtects for your protects, MyNextManagerTstatAndSensors for your tstats and sensors).</b>
 
 
 PREREQUISITES
@@ -87,16 +87,16 @@ ________________________________________________________________________
 
 5. [Chrome] You will find `user_id` and `access_token`  in the response to the request.
 
-6. [Chrome->ST] MyNestManagerV2- header section of the code: Copy over the Nest login information to the corresponding nest_* fields in the code (ST IDE) for MyNextManagerV2, refer to step 2g) below at https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
+6. [Chrome->ST] MyNestManager- header section of the code: Copy over the Nest login information to the corresponding nest_* fields in the code (ST IDE) for MyNextManager, refer to step 2g) below at https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanager.
 
-In the header (code) section of MyNextManagerV2, you will see "INSERT THE NEST LOGIN INFORMATION BELOW".
+In the header (code) section of MyNextManager, you will see "INSERT THE NEST LOGIN INFORMATION BELOW".
 
 FYI,the login info for Nest account users looks like the following (your Nest user id will be different):
 
 nest_user_id=4783742
 nest_access_token=b.4783742.xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-7. [ST IDE] MyNestManagerV2- header (code) section: After copying and pasting the login info, press "save" and "publish" to save/publish the code with your Nest login variables. Don't insert anything in the google section.
+7. [ST IDE] MyNextManager- header (code) section: After copying and pasting the login info, press "save" and "publish" to save/publish the code with your Nest login variables. Don't insert anything in the google section.
 
 Do not copy the double quotes from the nest login information in the variables. 
 
@@ -104,7 +104,7 @@ ______________
 <b>Notes:</b>
 ______________
 
-* If you lose your auth tokens, then you'd need to redo the steps above and copy over the new nest access_token back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 under Automation/Smartapps in the Samsung connect app by pressing "Next" till "Save").
+* If you lose your auth tokens, then you'd need to redo the steps above and copy over the new nest access_token back to the ST IDE. You can then reset the Nest connection by executing MyNextManager under Automation/Smartapps in the Samsung connect app by pressing "Next" till "Save").
 
 * You don't need to re-install the devices, just reset the Nest connection.
 
@@ -119,7 +119,7 @@ ______________
 
 * <b> Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in ST (i.e., do not log off, but you can close your browser and even turn off your desktop/mobile), and don't change your Google account password or 2FA settings.</b>
 
-* If you lose your auth tokens, then you'd need to redo the steps below and copy over the new google cookie and issue_token_url back to the ST IDE. You can then reset the Nest connection by executing MyNextManagerV2 (under the '+' sign in the upper right corner of the Samsung connect app) by pressing "Next" till "Save").
+* If you lose your auth tokens, then you'd need to redo the steps below and copy over the new google cookie and issue_token_url back to the ST IDE. You can then reset the Nest connection by executing MyNextManager (under the '+' sign in the upper right corner of the Samsung connect app) by pressing "Next" till "Save").
 
 * You don't need to re-install the devices, just reset the Nest connection.
 
@@ -141,18 +141,18 @@ The values of `issue_token` and `cookie` are specific to your Google Account. To
 5. [Chrome] In the 'Filter' box, enter `issueToken`
 7. [Chrome] Go to `home.nest.com`, and click 'Sign in with Google'. Log into your account.
 8. [Chrome] One network call (beginning with `iframerpc`) will appear in the Dev Tools window. Click on it.
-9. [Chrome] In the Headers tab, under General, copy the entire `Request URL` (beginning with `https://accounts.google.com`, ending with `nest.com`). This is your `"google_issue_token_url"` in the App Settings section of MyNextManagerV2 (ST IDE).Refer to https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
+9. [Chrome] In the Headers tab, under General, copy the entire `Request URL` (beginning with `https://accounts.google.com`, ending with `nest.com`). This is your `"google_issue_token_url"` in the App Settings section of MyNextManager (ST IDE).Refer to https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanager.
 10. [Chrome] In the 'Filter' box, enter `oauth2/iframe`
 11. [Chrome] Several network calls will appear in the Dev Tools window. Click on the last `iframe` call.
-12.[Chrome] In the Headers tab, under Request Headers, copy the entire `cookie` (usually it starts with `OCAK=...` or `SID=...` or `SMSV=...`  or with other values - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name). This google "cookie" needs to be copied over in the code (header) section of the MyNextManagerV2 smartapp  under the instructions saying 'INSERT GOOGLE LOGIN INFO BELOW'.  See https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
-13. [Chrome->ST IDE]   MyNestManagerV2- Make sure that the whole cookie from Google is contained in google_cookiep1.  There is no need to split the cookie anymore (the other google_cookie p2-p6 variables are used for backward compatibility. Please make sure to avoid inserting extra spaces or any other characters when you copy the google cookie as Google will not accept it and the list of devices will be empty.
-14. [ST IDE]  MyNestManagerV2- After copying and pasting the login info, press "save" and "publish" at the right corner of the ST IDE to save/publish the code with your variables.
+12.[Chrome] In the Headers tab, under Request Headers, copy the entire `cookie` (usually it starts with `OCAK=...` or `SID=...` or `SMSV=...`  or with other values - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name). This google "cookie" needs to be copied over in the code (header) section of the MyNextManager smartapp  under the instructions saying 'INSERT GOOGLE LOGIN INFO BELOW'.  See https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanager.
+13. [Chrome->ST IDE]   MyNextManager- Make sure that the whole cookie from Google is contained in google_cookiep1.  There is no need to split the cookie anymore (the other google_cookie p2-p6 variables are used for backward compatibility. Please make sure to avoid inserting extra spaces or any other characters when you copy the google cookie as Google will not accept it and the list of devices will be empty.
+14. [ST IDE]  MyNextManager- After copying and pasting the login info, press "save" and "publish" at the right corner of the ST IDE to save/publish the code with your variables.
 
 
 
-# 1) Depending on your contribution, create one or multiple Device Handler Type(s) - DTH for My NextTstatV2 or MyNextAlarmV2 (for Protects) or NextSensorV2
+# 1) Depending on your contribution, create one or multiple Device Handler Type(s) - DTH for My NextTstat or MyNextAlarm (for Protects) or NextSensor
 
-For each device (My NextTstatV2, My NextAlarmV2, My NextSensorV2),
+For each device (MyNextTstat, My NextAlarm, My NextSensor),
 
 a) [ST IDE]  Go to https://graph.api.smartthings.com/ide/devices  (or whatever your shard is and click on My Device Handlers in the IDE's top menu)
 
@@ -173,7 +173,7 @@ If the instructions above are not clear enough, you can refer to the troubleshoo
 http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_don.27t_know_how_to_create_a_custom_smartapp
 
 
-# 2) Create a new smartapp (MyNextManagerV2)
+# 2) Create a new smartapp (MyNextManager)
 
 a) Go to https://graph.api.smartthings.com/ide/apps (or whatever your shard is, and click on My Smartapps in the IDE's top menu)
 
@@ -204,7 +204,7 @@ http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_d
 
 
 
-# 3) Under the new Samsung connect app, execute MyNextManagerV2 (under + in the upper right corner/Smartapp)
+# 3) Under the new Samsung connect app, execute MyNextManager (under + in the upper right corner/Smartapp)
 
 [ST IDE] <b>  Go to the IDE in order to watch for any exceptions/errors in the logs.
     
@@ -212,16 +212,16 @@ https://graph.api.smartthings.com/ide/logs (or whatever your shard is, under Liv
 
 You can click at the top of the window on the smartapp name to filter the logs.
 
-[Samsung Connect App] To execute MyNextManagerV2, find the MyNextManagerV2 smartapp under the '+' sign in the upper right corner/Smartapp, My NextManagerV2 should be in the middle of the list (Custom section). To start the Authentication with Nest, press Next on the first page.  
+[Samsung Connect App] To execute MyNextManager, find the MyNextManager smartapp under the '+' sign in the upper right corner/Smartapp, My NextManagerV2 should be in the middle of the list (Custom section). To start the Authentication with Nest, press Next on the first page.  
 
-[ST IDE] <b> Check the logs for any installation errors.  Your login info may not have been copied correctly in the MyNextManagerV2's App Settings section.
+[ST IDE] <b> Check the logs for any installation errors.  Your login info may not have been copied correctly in the MyNextManager's App Settings section.
     
 *************************************************************************************************************************************
 N.B. If you have any errors:
 
 [Samsung Connect App] If you get a blank screen after pressing 'Next or you get the following error: "Error - bad state' or 'Java.lang.NullPointerException: Cannot get property 'accessToken' on null object" in the IDE', you'd need to enable oAuth as specified in step 2f) above.
 
-[Samsung Connect App] <b> At the end of the authorization flow,  if you have the following error message: "Unexpected error" even if you press several times, this probably means that you have not "saved & published" one of the Device Handler Types (MyNextTstatV2,MyNextAlarmV2,MyNextSensorV2) under the right shard.  Refer to the prerequisites & step 1 for more details.
+[Samsung Connect App] <b> At the end of the authorization flow,  if you have the following error message: "Unexpected error" even if you press several times, this probably means that you have not "saved & published" one of the Device Handler Types (MyNextTstat,MyNextAlarm,MyNextSensor) under the right shard.  Refer to the prerequisites & step 1 for more details.
  
 [Samsung Connect App] Also, depending on the ST platform status, you may have to press "Save" several times if you have the following error message: "Error processing your request - please try again".  This is due to some ST platform timeouts due to rate limiting.</b> 
  

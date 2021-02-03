@@ -212,7 +212,7 @@ https://graph.api.smartthings.com/ide/logs (or whatever your shard is, under Liv
 
 You can click at the top of the window on the smartapp name to filter the logs.
 
-[Samsung Connect App] To execute MyNextManager, find the MyNextManager smartapp under the '+' sign in the upper right corner/Smartapp, My NextManagerV2 should be in the middle of the list (Custom section). To start the Authentication with Nest, press Next on the first page.  
+[Samsung Connect App] To execute MyNextManager, find the MyNextManager smartapp under the '+' sign in the upper right corner/Smartapp, My NextManager should be in the middle of the list (Custom section). To start the Authentication with Nest, press Next on the first page.  
 
 [ST IDE] <b> Check the logs for any installation errors.  Your login info may not have been copied correctly in the MyNextManager's App Settings section.
     

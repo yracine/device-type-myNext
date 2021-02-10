@@ -14,11 +14,18 @@ Date:               2020-04-10
 Credits:             github @gboudreau for the initial Nest APIs discovery
 
 
-You can now download the code at 
+For SmartTHings users, you can now download the code at 
 
 <b>
 http://www.ecomatiqhomes.com/store 
 </b>
+
+For Hubitat users, you can now download the code at 
+
+<b>
+http://www.ecomatiqhomes.com/hubitatstore 
+</b>
+
 
 P.S. Technical support packages are also available.
 **************************************************************************************************

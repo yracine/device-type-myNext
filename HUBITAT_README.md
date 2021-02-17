@@ -47,7 +47,7 @@ are not the "official" ones and don't have an oAuth flow (see LOGIN INFO For NEs
 LOGIN INFO REQUIRED FOR NEST ACCOUNT Users (Not migrated to a Google account) 
 =============================================================================
 
-* <b> Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in Hubitat (i.e., do not log off, but you can close your browser and even turn off your desktop/mobile), and don't change your Nest account password or 2FA settings.</b>
+* <b> Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in Hubitat (i.e., do not log off, but you can close your browser and even turn off your desktop/mobile), don't change your Nest account password or 2FA settings, and do not re-login to keep your cookie valid.</b>
 
 * Google recently introduced reCAPTCHA when logging to Nest. That means username and password cannot be used directly any more. 
 Instead, you have to obtain  `user_id ` and  `access_token` for your account by logging in manually. 
@@ -98,7 +98,7 @@ ______________
 <b>Notes:</b>
 ______________
 
-* <b> Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in Hubitat (i.e., do not log off, but you can close your browser and even turn off your desktop/mobile), and don't change your Google account password or 2FA settings.</b>
+* <b> Once you log in to your Nest account as described in the steps below, please keep the connection active to avoid any disconnect in Hubitat (i.e., do not log off, but you can close your browser and even turn off your desktop/mobile), don't change your Nest account password or 2FA settings, and do not re-login to keep your cookie valid.</b>
 
 * If you lose your auth tokens, then you'd need to redo the steps below and copy over the new google cookie and issue_token_url back to the Hubitat IDE. You can then reset the Nest connection by executing MyNextManager by pressing "Next" till "Done").
 

@@ -105,7 +105,7 @@ ______________
 * You don't need to re-install the devices, just reset the Nest connection.
 
 ______________________________________________________________
-<b>14 Steps for users who have migrated to a Google account:</b>
+<b>13 Steps for users who have migrated to a Google account:</b>
 ______________________________________________________________
 
 Similar as the Nest account user, open `developer tools` in your Chrome browser,switch to the `Network` tab, hit `preserve Logs`.

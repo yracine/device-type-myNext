@@ -1,6 +1,6 @@
 # device-type-MyNext Hubitat integration
 
-For more details on the extensive features & capabilities of MyEcobee device, please refer to this Hubitat community thread:
+For more details on the extensive features & capabilities of Next Devices, please refer to this Hubitat community thread:
 
 https://community.hubitat.com/t/release-my-next-manager-for-your-nest-tstats-protects-and-sensors-all-nest-attributes-available-home-away-settargethumidity-sethotwaterboost-for-automation-and-no-throttling/58240
 

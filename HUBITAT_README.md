@@ -105,7 +105,7 @@ ______________
 * You don't need to re-install the devices, just reset the Nest connection.
 
 ______________________________________________________________
-<b>13 Steps for users who have migrated to a Google account:</b>
+<b>14 Steps for users who have migrated to a Google account:</b>
 ______________________________________________________________
 
 Similar as the Nest account user, open `developer tools` in your Chrome browser,switch to the `Network` tab, hit `preserve Logs`.
@@ -126,9 +126,8 @@ The values of `issue_token` and `cookie` are specific to your Google Account. To
 10. [Chrome] In the 'Filter' box, enter `oauth2/iframe`
 11. [Chrome] Several network calls will appear in the Dev Tools window. Click on the last `iframe` call.
 12.[Chrome] In the Headers tab, under Request Headers, copy the entire `cookie` (usually it starts with `OCAK=...` or `SID=...` or `SMSV=...`  or with other values - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name). This google "cookie" needs to be copied over in the code (header) section of the MyNextManager smartapp  under the instructions saying 'INSERT GOOGLE LOGIN INFO BELOW'.  See https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
-13. [Chrome->IDE]   MyNestManager- Make sure that the whole cookie from Google is contained in google_cookiep1.  There is no need to split the cookie anymore (the other google_cookie p2-p6 variables are used for backward compatibility. Please make sure to avoid inserting extra spaces or any other characters when you copy the google cookie as Google will not accept it and the list of devices will be empty.
-
-13. [Hubitat IDE]  MyNestManager header: After copying and pasting the login info in the header, press "save" to save your global variables.
+13. [Chrome->IDE]   MyNestManager- Make sure that the whole cookie from Google is contained in google_cookiep1.  There is no need to split the cookie anymore Please make sure to avoid inserting extra spaces or any other characters when you copy the google cookie as Google will not accept it and the list of devices will be empty.
+14. [Hubitat IDE]  MyNestManager header: After copying and pasting the login info in the header, press "save" to save your global variables.
 
 a) go to http://192.168.xx.xx/app/list (insert your own hub's ip address)
 

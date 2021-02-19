@@ -34,7 +34,7 @@ definition(
 )
 
 private def get_APP_VERSION() {
-	return "1.4"
+	return "1.5"
 }    
 
 
@@ -62,12 +62,12 @@ preferences {
 	    			input "sendPushMessage", "enum", title: "Send a push notification?", options:["Yes", "No"], required:
 			    		false
     				input "phone", "phone", title: "Send a Text Message?", required: false
-	    		}
-        	}            
-	}
-	section([mobileOnly:true]) {
+	    	}
+		}
+		section([mobileOnly:true]) {
         	label title: "Assign a name for this SmartApp", required: false
     	}
+	}
 }
 
 

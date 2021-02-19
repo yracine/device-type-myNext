@@ -88,7 +88,7 @@ def selectProgram() {
 			input "ecoFlag", "bool", title: "Or just set the thermostat(s) to eco?", required: false
             
 		}
-		section("When SmartThings' ST location (hello) mode changes to ('Away', 'Home')[optional]") {
+		section("When hub's location  mode changes to ('Away', 'Home')[optional]") {
 			input "newMode", "enum", options: enumModes, multiple:true, required: false
 		}
 		section("Enter a delay in minutes [optional, default=immediately after ST hello mode change] ") {

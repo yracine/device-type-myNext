@@ -84,7 +84,7 @@ ________________________________________________________________________
 ________________________________________________________________________
 
 
-1. [Chrome] To do that, open `developer tools` in your Chrome browser, switch to the `Network` tab, 
+1. [Chrome] Open a Chrome browser tab in Incognito Mode (or clear your cache). Go to the `developer tools` in your Chrome browser, switch to the `Network` tab.
 
 2. [Chrome] Hit `preserve Logs` in the Network tab 
 

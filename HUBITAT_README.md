@@ -122,7 +122,8 @@ The values of `issue_token` and `cookie` are specific to your Google Account. To
 5. [Chrome] In the 'Filter' box, enter `issueToken`
 7. [Chrome] Go to `home.nest.com`, and click 'Sign in with Google'. Log into your account.
 8. [Chrome] One network call (beginning with `iframerpc`) will appear in the Dev Tools window. Click on it.
-9. [Chrome] In the Headers tab, under General, copy the entire `Request URL` (beginning with `https://accounts.google.com`, ending with `nest.com`). This is your `"google_issue_token_url"` in the App Settings section of MyNextManager.Refer to https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
+9. [Chrome] In the Headers tab, under General, copy the entire `Request URL` (beginning with `https://accounts.google.com`, ending with `nest.com`). This is your `"google_issue_token_url"`.   Note: Any spaces within the google URL should be converted to '%20' to avoid the java.net.URISyntaxException: Illegal character message. 
+    Refer to https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.
 10. [Chrome] In the 'Filter' box, enter `oauth2/iframe`
 11. [Chrome] Several network calls will appear in the Dev Tools window. Click on the last `iframe` call. 
 12. [Chrome] In the Headers tab, under Request Headers, copy the entire `cookie` (usually it starts with `OCAK=...` or `SID=...` or `SMSV=...`  or with other values - **include the whole string which is several lines long and has many field/value pairs** - do not include the `cookie:` name). This google "cookie" needs to be copied over in the code (header) section of the MyNextManager smartapp  under the instructions saying 'INSERT GOOGLE LOGIN INFO BELOW'.  See https://github.com/yracine/device-type-myNext/blob/master/README.md#2-create-a-new-smartapp-mynextmanagerv2.

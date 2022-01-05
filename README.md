@@ -211,7 +211,7 @@ http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_d
 
 
 
-# 3) Under the new Samsung connect app, execute MyNextManager (in the Automation tab, under + in the upper right corner/Add Routine/Discover(bottom))
+# 3) Under the new Samsung connect app, execute MyNextManager (under the Automation bottom menu, under '+' in the upper right corner/Add Routine/Discover at the bottom)
 
 [ST IDE] <b>  Go to the IDE in order to watch for any exceptions/errors in the logs.
     

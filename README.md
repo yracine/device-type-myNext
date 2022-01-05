@@ -213,6 +213,8 @@ http://thingsthataresmart.wiki/index.php?title=My_NextServiceMgr#Issue_.231:_I_d
 
 # 3) Under the new Samsung connect app, execute MyNextManager (under the Automation bottom menu, under '+' in the upper right corner/Add Routine/Discover at the bottom)
 
+<b>Click on the Smartapp name (MyNextManager) in the list of smartapps under Discover</b>
+    
 [ST IDE] <b>  Go to the IDE in order to watch for any exceptions/errors in the logs.
     
 https://graph.api.smartthings.com/ide/logs (or whatever your shard is, under Live Logging in the IDE)

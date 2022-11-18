@@ -164,7 +164,7 @@ b) Copy and paste the code from the corresponding txt file in the zip
 
 c) Hit the save button on the right inside of the screen
 
-d) Make sure to enable OAuth in AppCode is active (click oAuth in the upper right corner)
+d) Make sure to enable OAuth in "Apps Code" is active (click oAuth in the upper right corner)
 * Hit "Update" at the bottom
 
 e) Copy the login information from Nest or Google under the right global variables (see instructions above)
